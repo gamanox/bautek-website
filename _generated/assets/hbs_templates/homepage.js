@@ -1,3 +1,0 @@
-define(["handlebars"], function(Handlebars) { return Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div id=\"homepage\">\n	<div class=\"container\">\n	PORTADA\n	</div>\n	<div class=\"container-half\">\n		SECCION 1\n	</div>\n	<div class=\"container-half\">\n		SECCION 2\n	</div>\n	<div class=\"container-half\">\n		SECCION 3\n	</div>\n	<div class=\"container-half\">\n		PUBLICIDAD\n	</div>\n</div>";
-},"useData":true}); });
