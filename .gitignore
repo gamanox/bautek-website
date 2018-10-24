@@ -1,1 +1,7 @@
-./_generated
+/_src/*
+/assets/vendor
+# /node_modules
+/assets/css/sprites
+/_generated/*
+enduro_secret.json
+/juicebox
