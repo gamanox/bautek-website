@@ -10,6 +10,16 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
 }
+a,
+a:hover {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.4s;
+}
+a:hover {
+  color: #ea5f32;
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -54,11 +64,22 @@ p {
   font-size: 0.875rem;
   font-weight: 900;
 }
+.fraccionamiento p.telefono img {
+  padding-right: 0.813rem;
+}
+.fraccionamiento p.correo img {
+  padding-right: 0.75rem;
+}
+.fraccionamiento a:hover p img path {
+  fill: #fff;
+}
+
 .vertical-center {
   min-height: 100%;
-  min-height: 100vh;
   display: flex;
   align-items: center;
+  width: 100%;
+  margin: 0;
 }
 .center-box {
   position: relative;
@@ -74,7 +95,7 @@ p {
 }
 .center-box h3 {
   padding-top: 9px;
-  font-weight: 300;
+  font-weight: 600;
   line-height: normal;
   font-size: 1.25rem;
   text-align: center;
@@ -89,6 +110,10 @@ p {
 @media (max-width: 500px) {
   html {
     font-size: 10px;
+  }
+  .vertical-center {
+    min-height: 70%;
+    height: 70%;
   }
   .fraccionamiento {
     position: relative;
