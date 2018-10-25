@@ -1,3 +1,4 @@
 .bg-landing {
-  background-image: url();
+  background-image: url(/landing/img/bg_landing.jpg);
 }
+  background-size: cover
