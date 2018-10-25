@@ -8,6 +8,10 @@ html,body {
   color: #fff;
   font-family: "Lato",sans-serif;
 }
+p {
+  margin: 0;
+  padding: 0;
+}
 .fraccionamiento {
   position: absolute;
   bottom: 0;
@@ -20,6 +24,9 @@ html,body {
   position: relative;
   padding: 12px;
   height: 100%;
+}
+.fraccionamiento .imagen-cont{
+  text-align: right
 }
 .fraccionamiento p.titulo {
   font-size: 23px;
