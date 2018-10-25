@@ -12,9 +12,14 @@ html,body {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 630;
-  height: 171;
+  width: 630px;
+  height: 171px;
   background-color: #222222;
+}
+.fraccionamiento .container{
+  position: relative;
+  padding: 12px;
+  height: 100%;
 }
 .fraccionamiento p.titulo {
   font-size: 23px;
@@ -25,6 +30,14 @@ html,body {
   font-weight: 400;
   font-style: italic;
   color: #EA5F32;
+}
+.fraccionamiento p.telefono {
+  font-size: 20px;
+  font-weight: 900;
+}
+.fraccionamiento p.correo {
+  font-size: 14px;
+  font-weight: 900;
 }
 .vertical-center {
   min-height: 100%;
