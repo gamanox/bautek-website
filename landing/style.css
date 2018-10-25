@@ -31,10 +31,12 @@ p {
 .fraccionamiento p.titulo {
   font-size: 23px;
   font-weight: 900;
+  line-height: 28px;
 }
 .fraccionamiento p.subtitulo {
   font-size: 16px;
   font-weight: 400;
+  line-height: 19px;
   font-style: italic;
   color: #EA5F32;
 }
