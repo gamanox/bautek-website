@@ -16,7 +16,7 @@ html,body {
   height: 171px;
   background-color: #222222;
 }
-.fraccionamiento .container{
+.fraccionamiento .container-fluid{
   position: relative;
   padding: 12px;
   height: 100%;
