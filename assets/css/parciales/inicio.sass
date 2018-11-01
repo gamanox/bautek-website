@@ -1,0 +1,451 @@
+#principal
+  .container-fluid
+    margin: 0
+    padding: 0
+    width: 100%
+    .row
+      margin: 0
+#inicio
+  .contenedor
+    height: 850px
+    min-height: 100%
+    background-size: cover
+    background-repeat: no-repeat
+    display: flex
+    justify-content: center
+    align-items: center
+    .cont-principal
+      position: absolute
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      .subtitulo
+        font-family: Lato
+        font-style: normal
+        font-weight: 900
+        line-height: normal
+        font-size: 25px
+        text-align: center
+        letter-spacing: 0.05em
+      .titulo
+        font-family: Lato
+        font-style: normal
+        font-weight: 300
+        line-height: normal
+        font-size: 60px
+        text-align: center
+        letter-spacing: 0.05em
+      .comentario
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        line-height: normal
+        font-size: 16px
+        text-align: center
+      .boton
+        width: 186px
+        height: 50px
+        margin-top: 69px
+        border: 4px solid #FFFFFF
+        box-sizing: border-box
+        background-color: transparent
+        color: #fff
+        font-family: Lato
+        font-style: normal
+        font-weight: 900
+        line-height: normal
+        font-size: 14px
+        letter-spacing: 0.1em
+        cursor: pointer
+  #inicio-servicios
+    .servicio
+      height: 540px
+      &.naranja
+
+        background-color: $naranja
+        color: $white
+        .texto-secc
+          .titulo
+            color: $white
+          .comentario
+            color: $white
+          .boton
+            border: solid 3px $white
+            background-color: transparent
+            .text
+              color: $white
+            &:hover
+              background-color: $white
+
+              .boton-img
+                filter: invert(50%) sepia(68%) saturate(3900%) hue-rotate(337deg) brightness(94%) contrast(92%)
+              .text
+                color: $naranja
+        
+    .contenedor-medio-1
+      width: 100%
+      height: 540px
+      background-color: #fff
+      display: flex
+      flex-direction: row
+    .imagen-secc
+      position: relative
+      align-items: center
+      cursor: pointer
+      overflow: hidden
+      display: flex
+      justify-content: center
+      text-align: center
+      width: 100%
+      height: 100%
+      &:hover
+        .rollover-secc
+          opacity: 1
+      .servicio-img
+        width: auto
+        height: 100%
+      .rollover-secc
+        width: 90%
+        height: 90%
+        top: 5%
+        left: 5%
+        background-color: #ea5f32
+        transition: opacity 0.4s
+        position: absolute
+        opacity: 0
+        mix-blend-mode: multiply
+        display: flex
+        justify-content: center
+      
+    .texto-secc
+      align-items: center
+      position: relative
+      display: flex
+      justify-content: center
+      .texto-contenedor
+        padding: 10% 10% 10% 10%
+      
+      .titulo
+        display: block
+        font-family: Lato
+        font-style: normal
+        font-weight: 300
+        line-height: normal
+        +rem(font-size, 60px)
+        letter-spacing: 0.05em
+        color: #EA5F32
+      .comentario
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        line-height: 24px
+        font-size: 16px
+        color: #555555
+      .boton
+        width: auto
+        height: auto
+        margin-top: 30px
+        border: 3px solid $naranja
+        box-sizing: border-box
+        background-color: #fff
+        position: relative
+        display: inline-block
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        padding-top: 5px
+        padding-bottom: 5px
+        padding-left: 22px
+        padding-right: 22px
+        transition: all 0.4s
+        .boton-img
+          display: inline-block
+          margin-right: 21px
+        .text
+          display: inline-block
+          color: #EA5F32
+          padding: 0
+          margin: 0
+          font-family: Lato
+          font-style: normal
+          font-weight: 900
+          line-height: normal
+          font-size: 14px
+          letter-spacing: 0.1em
+        &:hover
+          background-color: $naranja
+          
+          .boton-img
+            filter: brightness(100)
+          .text
+            color: $white
+
+    .contenedor-medio-2
+      width: 100%
+      height: 540px
+      background-color: $naranja
+      display: flex
+      flex-direction: row-reverse
+      .imagen-secc
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        &:hover
+          .rollover-secc
+            opacity: 1
+        .rollover-secc
+          transition: opacity 0.4s
+          position: absolute
+          opacity: 0
+          mix-blend-mode: multiply
+      .text-secc
+        position: relative
+        justify-content: center
+        padding-top: 102px
+        padding-left: 127px
+        .titulo
+          width: 450px
+          font-family: Lato
+          font-style: normal
+          font-weight: 300
+          line-height: normal
+          font-size: 60px
+          letter-spacing: 0.05em
+          color: #fff
+        .comentario
+          margin-top: 20px
+          width: 450px
+          font-family: Roboto
+          font-style: normal
+          font-weight: normal
+          line-height: 24px
+          font-size: 16px
+          color: #FFCBA8
+        .boton
+          width: auto
+          height: auto
+          margin-top: 30px
+          border: 4px solid #fff
+          box-sizing: border-box
+          background-color: #EA5F32
+          position: relative
+          display: inline-block
+          justify-content: center
+          align-items: center
+          cursor: pointer
+          padding-top: 7px
+          padding-bottom: 7px
+          padding-left: 25.93px
+          padding-right: 30px
+          .imagen-secc
+            margin-right: 26.21px
+            display: inline-block
+          .text
+            display: inline-block
+            color: #fff
+            font-family: Lato
+            font-style: normal
+            font-weight: 900
+            line-height: normal
+            font-size: 14px
+            letter-spacing: 0.1em
+    
+    .contenedor-medio-3
+      width: 100%
+      height: 540px
+      background-color: #fff
+      display: flex
+      flex-direction: row
+      .imagen-secc
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        &:hover
+          .rollover-secc
+            opacity: 1
+        .rollover-secc
+          transition: opacity 0.4s
+          position: absolute
+          opacity: 0
+          mix-blend-mode: multiply
+      .text-secc
+        position: relative
+        display: inline-block
+        justify-content: center
+        padding-top: 102px
+        padding-left: 127px
+        .titulo
+          width: 450px
+          font-family: Lato
+          font-style: normal
+          font-weight: 300
+          line-height: normal
+          font-size: 60px
+          letter-spacing: 0.05em
+          color: #EA5F32
+        .comentario
+          width: 450px
+          font-family: Roboto
+          font-style: normal
+          font-weight: normal
+          line-height: 24px
+          font-size: 16px
+          color: #555555
+        .boton
+          width: auto
+          height: auto
+          margin-top: 30px
+          border: 3px solid $naranja
+          box-sizing: border-box
+          background-color: #fff
+          position: relative
+          display: inline-block
+          justify-content: center
+          align-items: center
+          cursor: pointer
+          padding-top: 10px
+          padding-bottom: 8px
+          padding-left: 21px
+          padding-right: 29px
+          .imagen-secc
+            display: inline-block
+            margin-right: 21px
+          .text
+            display: inline-block
+            color: #EA5F32
+            padding-top: 13px
+            font-family: Lato
+            font-style: normal
+            font-weight: 900
+            line-height: normal
+            font-size: 14px
+            letter-spacing: 0.1em
+
+  #anuncio
+    height: 500px
+    overflow: hidden
+    background-color: #0B1924
+    .imagen-secc
+      position: relative
+      display: flex
+      justify-content: center
+      align-items: center
+      overflow: hidden
+      img
+        height: 100%
+        width: auto
+    .text-secc
+      padding: 5%
+      position: relative
+      display: flex
+      flex-direction: column
+      justify-content: center
+      // align-items: center
+      text-align: left
+      .titulo
+        font-family: Lato
+        font-style: normal
+        font-weight: 300
+        line-height: normal
+        font-size: 60px
+        letter-spacing: 0.05em
+        color: #FFFFFF
+      .comentario
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        line-height: 23px
+        font-size: 16px
+        color: #FFFFFF
+      .boton
+        width: 307px
+        height: 60px
+        margin-top: 69px
+        border: 4px solid #EA5F32
+        box-sizing: border-box
+        background-color: transparent
+        font-family: Lato
+        font-style: normal
+        font-weight: 900
+        line-height: normal
+        font-size: 14px
+        letter-spacing: 0.1em
+        color: #FFFFFF
+        text-decoration: none
+        cursor: pointer
+        &:hover
+          text-decoration: none
+    
+  #inicio-galeria
+    position: relative
+    .seccion-titulo
+      font-weight: 300
+      color: $naranja
+      font-size: 60px
+      padding-top: 65px
+      text-align: center
+    .seccion-descripcion
+      font-weight: 500
+      font-size: 16px
+      text-align: center
+      color: #555
+      padding-bottom: 36px
+    .galeria
+      position: relative
+      align-items: center
+      cursor: pointer
+      overflow: hidden
+      display: flex
+      justify-content: center
+      text-align: center
+      height: 280px
+      margin-bottom: 46px
+      .galeria-img
+        width: 100%
+        height: auto
+      &:hover
+        .rollover-gal
+          opacity: 1
+      .rollover-gal
+        width: 80%
+        height: 70%
+        top: 15%
+        left: 10%
+        background-color: #ea5f32
+        transition: opacity 0.4s
+        position: absolute
+        opacity: 0
+        mix-blend-mode: multiply
+        display: flex
+        justify-content: center
+    .text-secc
+        position: relative
+        display: inline-block
+        justify-content: center
+        padding-top: 102px
+        padding-left: 127px
+        .titulo
+          font-family: Lato
+          font-style: normal
+          font-weight: 300
+          line-height: normal
+          font-size: 60px
+          text-align: center
+          letter-spacing: 0.05em
+          color: #E8603B
+        .comentario
+          font-family: Lato
+          font-style: normal
+          font-weight: 500
+          line-height: normal
+          font-size: 16px
+          text-align: center
+          color: #555555
+
+      
+        
