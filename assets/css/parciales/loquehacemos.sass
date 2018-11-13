@@ -92,278 +92,220 @@
         font-size: 16px
         text-align: center
         color: #555555
-    .servicio
-      height: 500px
-      padding: 15px
 
-      &.naranja
-
-        background-color: $naranja
-        color: $white
-        .texto-secc
-          .titulo
-            color: $white
-          .comentario
-            color: $white
-          .boton
-            border: solid 3px $white
-            background-color: transparent
-            .text
-              color: $white
-            &:hover
-              background-color: $white
-
-              .boton-img
-                filter: invert(50%) sepia(68%) saturate(3900%) hue-rotate(337deg) brightness(94%) contrast(92%)
-              .text
-                color: $naranja
-
-    .contenedor-medio-1
+    .servicios
       width: 100%
       height: 540px
+      position: relative
       background-color: #fff
       display: flex
-      flex-direction: row
-    .imagen-secc
-      background-size: cover
-      background-repeat: no-repeat
-      background-position: 50% 50%
-      position: relative
       align-items: center
-      cursor: pointer
-      overflow: hidden
-      display: flex
       justify-content: center
-      text-align: center
-      width: 420px
-      height: 420px
-
-      &:hover
-        .rollover-secc
-          opacity: 1
-      .servicio-img
-        width: 90%
-        top: 5%
-        left: 5%
-        height: auto
-      .rollover-secc
-        width: 90%
-        height: 90%
-        top: 5%
-        left: 5%
-        background-color: #ea5f32
+      flex-direction: row
+      .diseño
+        position: relative
+        cursor: pointer
         transition: opacity 0.4s
-        position: absolute
-        opacity: 0
         mix-blend-mode: multiply
-        display: flex
-        justify-content: center
-
-    .texto-secc
-      align-items: center
-      position: relative
-      display: flex
-      justify-content: center
-      .texto-contenedor
-        padding: 10% 10% 10% 10%
-
-      .titulo
-        display: block
-        font-family: Lato
-        font-style: normal
-        font-weight: 300
-        line-height: normal
-        +rem(font-size, 60px)
-        letter-spacing: 0.05em
-        color: #EA5F32
-      .comentario
-        font-style: normal
-        font-weight: normal
-        line-height: 24px
-        font-size: 16px
-        color: #555555
-      .boton
-        width: auto
-        height: auto
-        margin-top: 30px
-        border: 3px solid $naranja
-        box-sizing: border-box
-        background-color: #fff
-        position: relative
-        display: inline-block
-        justify-content: center
-        align-items: center
-        cursor: pointer
-        padding-top: 5px
-        padding-bottom: 5px
-        padding-left: 22px
-        padding-right: 22px
-        transition: all 0.4s
-        .boton-img
-          display: inline-block
-          margin-right: 21px
-        .text
-          display: inline-block
-          color: #EA5F32
-          padding: 0
-          margin: 0
-          font-family: Lato
-          font-style: normal
-          font-weight: 900
-          line-height: normal
-          font-size: 14px
-          letter-spacing: 0.1em
         &:hover
-          background-color: $naranja
-
-          .boton-img
-            filter: brightness(100)
-          .text
-            color: $white
-
-    .contenedor-medio-2
-      width: 100%
-      height: 540px
-      background-color: $naranja
-      display: flex
-      flex-direction: row-reverse
-      .imagen-secc
-        position: relative
-        display: flex
-        justify-content: center
-        align-items: center
-        cursor: pointer
-        &:hover
-          .rollover-secc
+          .d-imagen
             opacity: 1
-        .rollover-secc
-          transition: opacity 0.4s
+          .d-color
+            background-color: #E8603B
+          .d-texto
+            .d-logo
+              filter: brightness(100)
+            .d-titulo
+              color: #ffffff
+            .d-subtitulo
+              color: #ffffff
+        .d-imagen
+          width: 100%
+          height: 100%
           position: absolute
-          opacity: 0
+          background-size: cover
+          background-repeat: no-repeat
+          background-position: 50% 50%
+          opacity: 0     
+        .d-color
+          width: 100%
+          height: 100%
+          opacity: 1
+          position: absolute
+          background-color: #F6F6F6
           mix-blend-mode: multiply
-      .text-secc
-        position: relative
-        justify-content: center
-        padding-top: 102px
-        padding-left: 127px
-        .titulo
-          width: 450px
+        .d-texto
+          padding: 60px
+          position: relative
+          display: flex
+          align-items: center
+          justify-content: center
+          flex-direction: column
           font-family: Lato
           font-style: normal
-          font-weight: 300
           line-height: normal
-          font-size: 60px
-          letter-spacing: 0.05em
-          color: #fff
-        .comentario
-          margin-top: 20px
-          width: 450px
-          font-style: normal
-          font-weight: normal
-          line-height: 24px
-          font-size: 16px
-          color: #FFCBA8
-        .boton
-          width: auto
-          height: auto
-          margin-top: 30px
-          border: 4px solid #fff
-          box-sizing: border-box
-          background-color: #EA5F32
-          position: relative
-          display: inline-block
-          justify-content: center
-          align-items: center
-          cursor: pointer
-          padding-top: 7px
-          padding-bottom: 7px
-          padding-left: 25.93px
-          padding-right: 30px
-          .imagen-secc
-            margin-right: 26.21px
-            display: inline-block
-          .text
-            display: inline-block
-            color: #fff
-            font-family: Lato
-            font-style: normal
+          text-align: center
+          .d-logo
+          .d-titulo
             font-weight: 900
-            line-height: normal
-            font-size: 14px
-            letter-spacing: 0.1em
+            font-size: 20px
+            text-align: center
+            letter-spacing: 0.05em
+            color: #474747
+          .d-subtitulo
+            font-weight: normal
+            font-size: 18px
+            text-align: center
+            color: #555555
 
-    .contenedor-medio-3
-      width: 100%
-      height: 540px
-      background-color: #fff
-      display: flex
-      flex-direction: row
-      .imagen-secc
-        position: relative
-        display: flex
-        justify-content: center
-        align-items: center
-        cursor: pointer
-        &:hover
-          .rollover-secc
-            opacity: 1
-        .rollover-secc
-          transition: opacity 0.4s
-          position: absolute
-          opacity: 0
-          mix-blend-mode: multiply
-      .text-secc
-        position: relative
-        display: inline-block
-        justify-content: center
-        padding-top: 102px
-        padding-left: 127px
-        .titulo
-          width: 450px
-          font-family: Lato
-          font-style: normal
-          font-weight: 300
-          line-height: normal
-          font-size: 60px
-          letter-spacing: 0.05em
-          color: #EA5F32
-        .comentario
-          width: 450px
-          font-family: Roboto
-          font-style: normal
-          font-weight: normal
-          line-height: 24px
-          font-size: 16px
-          color: #555555
-        .boton
-          width: auto
-          height: auto
-          margin-top: 30px
-          border: 3px solid $naranja
-          box-sizing: border-box
-          background-color: #fff
-          position: relative
-          display: inline-block
-          justify-content: center
-          align-items: center
-          cursor: pointer
-          padding-top: 10px
-          padding-bottom: 8px
-          padding-left: 21px
-          padding-right: 29px
-          .imagen-secc
-            display: inline-block
-            margin-right: 21px
-          .text
-            display: inline-block
-            color: #EA5F32
-            padding-top: 13px
-            font-family: Lato
-            font-style: normal
-            font-weight: 900
-            line-height: normal
-            font-size: 14px
-            letter-spacing: 0.1em
+        // &:hover
+        //   background-color: $naranja
+
+        //   .boton-img
+        //     filter: brightness(100)
+        //   .text
+        //     color: $white
+
+    // .contenedor-medio-2
+    //   width: 100%
+    //   height: 540px
+    //   background-color: $naranja
+    //   display: flex
+    //   flex-direction: row-reverse
+    //   .imagen-secc
+    //     position: relative
+    //     display: flex
+    //     justify-content: center
+    //     align-items: center
+    //     cursor: pointer
+    //     &:hover
+    //       .rollover-secc
+    //         opacity: 1
+    //     .rollover-secc
+          
+    //   .text-secc
+    //     position: relative
+    //     justify-content: center
+    //     padding-top: 102px
+    //     padding-left: 127px
+    //     .titulo
+    //       width: 450px
+    //       font-family: Lato
+    //       font-style: normal
+    //       font-weight: 300
+    //       line-height: normal
+    //       font-size: 60px
+    //       letter-spacing: 0.05em
+    //       color: #fff
+    //     .comentario
+    //       margin-top: 20px
+    //       width: 450px
+    //       font-style: normal
+    //       font-weight: normal
+    //       line-height: 24px
+    //       font-size: 16px
+    //       color: #FFCBA8
+    //     .boton
+    //       width: auto
+    //       height: auto
+    //       margin-top: 30px
+    //       border: 4px solid #fff
+    //       box-sizing: border-box
+    //       background-color: #EA5F32
+    //       position: relative
+    //       display: inline-block
+    //       justify-content: center
+    //       align-items: center
+    //       cursor: pointer
+    //       padding-top: 7px
+    //       padding-bottom: 7px
+    //       padding-left: 25.93px
+    //       padding-right: 30px
+    //       .imagen-secc
+    //         margin-right: 26.21px
+    //         display: inline-block
+    //       .text
+    //         display: inline-block
+    //         color: #fff
+    //         font-family: Lato
+    //         font-style: normal
+    //         font-weight: 900
+    //         line-height: normal
+    //         font-size: 14px
+    //         letter-spacing: 0.1em
+
+    // .contenedor-medio-3
+    //   width: 100%
+    //   height: 540px
+    //   background-color: #fff
+    //   display: flex
+    //   flex-direction: row
+    //   .imagen-secc
+    //     position: relative
+    //     display: flex
+    //     justify-content: center
+    //     align-items: center
+    //     cursor: pointer
+    //     &:hover
+    //       .rollover-secc
+    //         opacity: 1
+    //     .rollover-secc
+    //       transition: opacity 0.4s
+    //       position: absolute
+    //       opacity: 0
+    //       mix-blend-mode: multiply
+    //   .text-secc
+    //     position: relative
+    //     display: inline-block
+    //     justify-content: center
+    //     padding-top: 102px
+    //     padding-left: 127px
+    //     .titulo
+    //       width: 450px
+    //       font-family: Lato
+    //       font-style: normal
+    //       font-weight: 300
+    //       line-height: normal
+    //       font-size: 60px
+    //       letter-spacing: 0.05em
+    //       color: #EA5F32
+    //     .comentario
+    //       width: 450px
+    //       font-family: Roboto
+    //       font-style: normal
+    //       font-weight: normal
+    //       line-height: 24px
+    //       font-size: 16px
+    //       color: #555555
+    //     .boton
+    //       width: auto
+    //       height: auto
+    //       margin-top: 30px
+    //       border: 3px solid $naranja
+    //       box-sizing: border-box
+    //       background-color: #fff
+    //       position: relative
+    //       display: inline-block
+    //       justify-content: center
+    //       align-items: center
+    //       cursor: pointer
+    //       padding-top: 10px
+    //       padding-bottom: 8px
+    //       padding-left: 21px
+    //       padding-right: 29px
+    //       .imagen-secc
+    //         display: inline-block
+    //         margin-right: 21px
+    //       .text
+    //         display: inline-block
+    //         color: #EA5F32
+    //         padding-top: 13px
+    //         font-family: Lato
+    //         font-style: normal
+    //         font-weight: 900
+    //         line-height: normal
+    //         font-size: 14px
+    //         letter-spacing: 0.1em
 
   #anuncio
     height: 500px
