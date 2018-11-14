@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
-    {{#>cabeza}}
-    {{/cabeza}}
+{{#>cabeza}}
+{{/cabeza}}
 
-    <body>
-        {{#>encabezado}}
-        {{/encabezado}}
-        <div id="principal">
-			{{> @partial-block}}
+<body>
+    {{#>encabezado}}
+    {{/encabezado}}
+    <div id="principal">
+        {{> @partial-block}}
         {{#>pie}}
         {{/pie}}
-        </div>
-    </body>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
 </html>
