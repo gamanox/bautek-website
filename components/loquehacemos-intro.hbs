@@ -1,16 +1,83 @@
-<section class="seccion" id="loquehacemos-intro">
-  <div class="contenedor" style="background-image: url(/assets/img/background-homepage.jpg)">
-    <div class="cont-principal">
-      <div>
-        <h2 class="subtitulo">EN BAUTEK</h2>
+<div class="seccion" id="loquehacemos-intro">
+    <div class="contenedor section">
+      <!-- {{!-- SLIDE EN BAUTEK --}}
+      <div class="slide cont-principal" style="background-image: url(/assets/img/venta-slide.jpg)">
+        <div>
+          <h2 class="subtitulo">
+            <img src="/assets/img/slider-vector-venta.svg" alt="">
+          </h2>
+        </div>
+        <div>
+          <h1 class="titulo">CASAS EN VENTA</h1>
+        </div>
+        <div>
+          <h3 class="comentario">Vive los mejores momentos de tu vida en tu nueva casa</h3>
+        </div>
+        {{!-- <div class="link">
+          <p>
+            <a href="#" class="boton">CONOCER MÁS</a>
+          </p>
+        </div> --}}
       </div>
-      <div>
-        <h1 class="titulo">LO QUE HACEMOS</h1>
+   -->
+      {{!-- SLIDE LOQUEHACEMOS --}}
+      <div class="slide cont-principal" style="background-image: url(/assets/img/slide-loquehacemos.jpg)">
+        <div>
+          <h1 class="titulo">LO QUE HACEMOS</h1>
+        </div>
+        <div>
+          <h3 class="comentario">Innovación y calidad en construcción</h3>
+        </div>
       </div>
-      <div>
-        <h3 class="comentario">Innovación y calidad en construcción</h3>
-      </div>
-      <button class="boton">CONOCER MÁS</button>
+  
+      <!-- {{!-- SLIDE CASA --}}
+      <div class="slide cont-principal" style="background-image: url(/assets/img/slide-casa.jpg)">
+        <div>
+          <h2 class="subtitulo">ÚLTIMAS CASAS EN HABITA</h2>
+        </div>
+        <div>
+          <h1 class="titulo">EL MEJOR LUGAR PARA VIVIR<br>EN SALTILLO.</h1>
+        </div>
+        <div>
+          <h3 class="comentario">Inversión desde $3’050,000</h3>
+        </div>
+        <div class="link">
+          <p>
+            <a href="/casa" class="boton">CONOCER MÁS</a>
+          </p>
+        </div>
+      </div> -->
+  
+      <!-- {{!-- SLIDE FRACCIONAMIENTO --}}
+      <div class="slide cont-principal" style="background-image: url(/assets/img/slide-fraccionamiento.jpg)">
+        <div>
+          <h2 class="subtitulo">RINCÓN DE ALCÁNTARA.</h2>
+        </div>
+        <div>
+          <h1 class="titulo">DONDE SE CREARÁN<br>NUEVOS RECUERDOS</h1>
+        </div>
+        <div>
+          <h3 class="comentario">PREVENTA: Casas desde $3’500,000</h3>
+        </div>
+        <div class="link">
+          <p>
+            <a href="/alcantara" class="boton">CONOCER MÁS</a>
+          </p>
+        </div>
+      </div> -->
+  
+    </div>
+    <div class="breadcrumb">
+      <p>
+        INICIO <img src="/assets/img/breadcrumb-arrow.svg" alt=""> CASAS A TU MEDIDA
+      </p>
     </div>
   </div>
-</section>
+  <script>
+    new fullpage("#loquehacemos-intro", {
+      licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
+      autoScrolling: false,
+      fitToSection: false,
+    });
+  
+  </script>
