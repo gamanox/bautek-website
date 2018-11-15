@@ -84,8 +84,8 @@
             &:hover
               background-color: $white
 
-              .boton-img
-                filter: invert(50%) sepia(68%) saturate(3900%) hue-rotate(337deg) brightness(94%) contrast(92%)
+              // .boton-img
+              //   filter: invert(50%) sepia(68%) saturate(3900%) hue-rotate(337deg) brightness(94%) contrast(92%)
               .text
                 color: $naranja
 
@@ -164,8 +164,8 @@
         cursor: pointer
         padding-top: 5px
         padding-bottom: 5px
-        padding-left: 22px
-        padding-right: 22px
+        padding-left: 40px
+        padding-right: 40px
         transition: all 0.4s
         .boton-img
           display: inline-block
@@ -375,23 +375,40 @@
         font-size: 16px
         color: #FFFFFF
       .boton
-        width: 307px
-        height: 60px
-        margin-top: 69px
-        border: 4px solid #EA5F32
+        width: auto
+        height: auto
+        margin-top: 30px
+        border: 3px solid $naranja
         box-sizing: border-box
-        background-color: transparent
-        font-family: Lato
-        font-style: normal
-        font-weight: 900
-        line-height: normal
-        font-size: 14px
-        letter-spacing: 0.1em
-        color: #FFFFFF
-        text-decoration: none
+        background-color: #fff
+        position: relative
+        display: inline-block
+        justify-content: center
+        align-items: center
         cursor: pointer
+        padding-top: 5px
+        padding-bottom: 5px
+        padding-left: 40px
+        padding-right: 40px
+        transition: all 0.4s
+        .text
+          display: inline-block
+          color: #EA5F32
+          padding: 0
+          margin: 0
+          font-family: Lato
+          font-style: normal
+          font-weight: 900
+          line-height: normal
+          font-size: 14px
+          letter-spacing: 0.1em
         &:hover
-          text-decoration: none
+          background-color: $naranja
+
+          .boton-img
+            filter: brightness(100)
+          .text
+            color: $white
 
 #inicio-galeria
   position: relative
