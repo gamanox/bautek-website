@@ -340,75 +340,92 @@
     .imagen-secc
       height: 540px
       width: auto
-      position: relative
-      display: flex
-      justify-content: center
-      align-items: center
-      overflow: hidden
-      background-size: cover
+      pbackground-size: cover
       background-repeat: no-repeat
       background-position: 50% 50%
-      img
-        height: 100%
-        width: auto
-    .text-secc
+      position: relative
+      align-items: center
+      cursor: pointer
+      overflow: hidden
+      display: flex
+      justify-content: center
+      text-align: center
+      // img
+      //   height: 100%
+      //   width: auto
+      &:hover
+        .rollover-secc
+          opacity: 1
+      .rollover-secc
+        width: 90%
+        height: 90%
+        top: 5%
+        left: 5%
+        background-color: #ea5f32
+        transition: opacity 0.4s
+        position: absolute
+        opacity: 0
+        mix-blend-mode: multiply
+        display: flex
+        justify-content: center
+    .texto-secc
       padding: 5%
       position: relative
       display: flex
       flex-direction: column
       justify-content: center
-      // align-items: center
+      align-items: center
       text-align: left
-      .titulo
-        font-family: Lato
-        font-style: normal
-        font-weight: 300
-        line-height: normal
-        font-size: 60px
-        letter-spacing: 0.05em
-        color: #FFFFFF
-      .comentario
-        font-family: Lato
-        font-style: normal
-        font-weight: normal
-        line-height: 23px
-        font-size: 16px
-        color: #FFFFFF
-      .boton
-        width: auto
-        height: auto
-        margin-top: 30px
-        border: 3px solid $naranja
-        box-sizing: border-box
-        background-color: #fff
-        position: relative
-        display: inline-block
-        justify-content: center
-        align-items: center
-        cursor: pointer
-        padding-top: 5px
-        padding-bottom: 5px
-        padding-left: 40px
-        padding-right: 40px
-        transition: all 0.4s
-        .text
-          display: inline-block
-          color: #EA5F32
-          padding: 0
-          margin: 0
+      .texto-contenedor
+        padding: 10% 10% 10% 10%
+        .titulo
           font-family: Lato
           font-style: normal
-          font-weight: 900
+          font-weight: 300
           line-height: normal
-          font-size: 14px
-          letter-spacing: 0.1em
-        &:hover
-          background-color: $naranja
-
-          .boton-img
-            filter: brightness(100)
+          font-size: 60px
+          letter-spacing: 0.05em
+          color: #FFFFFF
+        .comentario
+          font-family: Lato
+          font-style: normal
+          font-weight: normal
+          line-height: 23px
+          font-size: 16px
+          color: #FFFFFF
+        .boton
+          width: auto
+          height: auto
+          margin-top: 30px
+          border: 3px solid $naranja
+          box-sizing: border-box
+          position: relative
+          display: inline-block
+          justify-content: center
+          align-items: center
+          cursor: pointer
+          padding-top: 5px
+          padding-bottom: 5px
+          padding-left: 40px
+          padding-right: 40px
+          transition: all 0.4s
           .text
-            color: $white
+            display: inline-block
+            padding: 0
+            margin: 0
+            font-family: Lato
+            font-style: normal
+            font-weight: 900
+            line-height: normal
+            font-size: 14px
+            letter-spacing: 0.1em
+          &:hover
+            background-color: $naranja
+
+            .boton-img
+              filter: brightness(100)
+            .text
+              color: $white
 
 #inicio-galeria
   position: relative
