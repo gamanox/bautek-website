@@ -84,10 +84,66 @@ li
   list-style-type: none
 #whatsapp
   position: fixed
-  z-index: 2
+  z-index: 5
   right: 16px
-  top: 13px
+  top: 10px
   cursor: pointer
   transition: all 0.4s
   &:hover
     transform: scale(1.2)
+
+.section
+  .slide:before
+    position: absolute
+    content: " "
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: block
+    z-index: 1
+    background-color: rgba(0,0,0,0.3)
+    mix-blend-mode: multiply
+  .slide
+    .fp-tableCell
+      z-index: 2
+      position: relative
+
+
+#agendarcita
+  position: absolute
+  bottom: 0
+  right: 32px
+  z-index: 5
+  width: 320px
+  &.active
+    .agendarcita-btn
+      img
+        transform: scaleY(1)
+    .agendarcita-form
+      height: 557px
+  .agendarcita-btn
+    background-color: #0B1924
+    border-top: 4px solid $naranja
+    width: 320px
+    padding-top: 29px
+    padding-bottom: 29px
+    padding-left: 46px
+    cursor: pointer
+    p
+      font-family: Lato
+      font-style: normal
+      font-weight: 800
+      line-height: normal
+      font-size: 20px
+      letter-spacing: 0.05em
+      img
+        padding-left: 30px
+        transform: scaleY(-1)
+  .agendarcita-form
+    height: 0px
+    width: 320px
+    background: #010101
+    opacity: 0.5
+    overflow: hidden
+    transition: all 0.4s
