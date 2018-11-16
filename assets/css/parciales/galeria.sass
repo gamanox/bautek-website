@@ -1,0 +1,83 @@
+#galeria
+  position: relative
+  .seccion-titulo
+    font-weight: 300
+    color: $naranja
+    font-size: 60px
+    padding-top: 65px
+    text-align: center
+  .seccion-descripcion
+    font-weight: 500
+    font-size: 16px
+    text-align: center
+    color: #555
+    padding-bottom: 36px
+  .galeria
+    position: relative
+    align-items: center
+    cursor: pointer
+    overflow: hidden
+    display: flex
+    justify-content: center
+    text-align: center
+    flex-direction: column
+    height: 280px
+    margin-bottom: 46px
+    .galeria-img
+      width: 100%
+      height: auto
+    &:hover
+      .rollover-gal
+        opacity: 1
+    .rollover-gal
+      width: 80%
+      height: 65%
+      top: 5%
+      left: 10%
+      background-color: #ea5f32
+      transition: opacity 0.4s
+      position: absolute
+      opacity: 0
+      mix-blend-mode: multiply
+      display: flex
+      justify-content: center
+    .g-titulo
+      font-family: Lato
+      font-style: normal
+      font-weight: 900
+      line-height: normal
+      font-size: 20px
+      text-align: center
+      letter-spacing: 0.05em
+      color: #474747
+    .g-descripccion
+      font-family: Lato
+      font-style: normal
+      font-weight: 500
+      line-height: normal
+      font-size: 16px
+      text-align: center
+      color: #555555
+  .text-secc
+      position: relative
+      display: inline-block
+      justify-content: center
+      padding-top: 102px
+      padding-left: 127px
+      .titulo
+        font-family: Lato
+        font-style: normal
+        font-weight: 300
+        line-height: normal
+        font-size: 60px
+        text-align: center
+        letter-spacing: 0.05em
+        color: #E8603B
+      .comentario
+        font-family: Lato
+        font-style: normal
+        font-weight: 500
+        line-height: normal
+        font-size: 16px
+        text-align: center
+        color: #555555
