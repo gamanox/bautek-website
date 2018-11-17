@@ -97,6 +97,40 @@
 #fraccionamiento-servicios
   .servicio
     height: 540px
+    &.naranja
+      background-color: $naranja
+      color: $white
+      .texto-secc
+        .titulo
+          color: $white
+        .comentario
+          color: $white
+        .boton
+          border: solid 3px $white
+          background-color: transparent
+          .text
+            color: $white
+          &:hover
+            background-color: $white
+            .text
+              color: $naranja
+    &.gris
+      background-color: #0B1924
+      color: $white
+      .texto-secc
+        .titulo
+          color: $white
+        .comentario
+          color: $white
+        .boton
+          border: solid 3px $naranja
+          background-color: transparent
+          .text
+            color: $white
+          &:hover
+            background-color: #0B1924
+            .text
+              color: $naranja
   .principal
     padding: 50px
   .imagen-secc
