@@ -13,6 +13,32 @@ body
   padding: 0
   margin: 0
 
+#principal
+  &:before
+    transition: all 0.4s
+    position: fixed
+    content: " "
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: block
+    visibility: hidden
+    z-index: 6
+  &.active:before
+    visibility: visible
+    position: fixed
+    content: " "
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: block
+    z-index: 6
+    background-color: rgba(0,0,0,0.5)
+
+  // mix-blend-mode: multiply
+
 .center_block
   text-align: center
   position: absolute
@@ -102,7 +128,7 @@ li
     height: 100%
     display: block
     z-index: 1
-    background-color: rgba(0,0,0,0.3)
+    background-color: rgba(0,0,0,0.1)
     mix-blend-mode: multiply
   .slide
     .fp-tableCell
