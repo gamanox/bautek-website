@@ -179,8 +179,11 @@ $(function() {
   $("#menu").on("click", function() {
     $(this).toggleClass("active");
     $("#menu-overlay").toggleClass("active");
+    $("#principal").toggleClass("active");
   });
   $("#menu-overlay .close").on("click", function() {
+    $("#principal").toggleClass("active");
+
     $("#menu").toggleClass("active");
     $("#menu-overlay").toggleClass("active");
   });
