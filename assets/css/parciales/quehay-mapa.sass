@@ -17,12 +17,14 @@
       margin-bottom: 36px
   .quehay
     position: relative
-    height: 100%
+    height: 580px
+    padding: 20px
     .quehay-menu
       height: 100%
-      padding: 10%
+      
       .quehay-boton
-        height: 100px
+        height: 130px
+        // width: 130px
         padding: 15%
         margin-bottom: 10px
         display: flex
@@ -30,15 +32,28 @@
         justify-content: center
         flex-direction: column
         background-color: #F3F3F3
+        cursor: pointer
         &:hover
           img
-            filter: invert(100%)
-          .restaurantes
+            filter: brightness(100)
+          &.restaurantes
             background-color: #E34750
-          .cafeterias
+          &.cafeterias
             background-color: #8B673D
-          .bares
+          &.bares
             background-color: #8961BC
+          &.supermercados
+            background-color: #E9B041
+          &.escuelas
+            background-color: #80171D
+          &.hospitales
+            background-color: #4CC8D9
+          &.gasolineras
+            background-color: #1F687F
+          &.bancos
+            background-color: #5B7F1F
+          &.c-comerciales
+            background-color: #CB67A3
             
       .quehay-texto
         font-family: Lato
@@ -52,3 +67,5 @@
     .quehay-mapa
       height: 500px
       background-color: #E8603B
+      .quehay-marcador-lugar
+      .quehay-marcador-bautek
