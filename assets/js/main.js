@@ -73,12 +73,18 @@ function loquehacemosMapa() {
       }
     ]
   });
+  var icons = {
+    party: {
+      icon: '/assets/img/quehay-marcador-bautek.svg'
+    }
+  };
   var party_location = {
     position: new google.maps.LatLng(25.464993, -100.978545),
     type: "party"
   };
   console.log(party_location.position);
   var currentMarker = new google.maps.Marker({
+    icon: '/assets/img/quehay-marcador-bautek.svg',
     position: party_location.position,
     map: mapa
   });
@@ -159,12 +165,17 @@ function initMap() {
       }
     ]
   });
+  var icons = {
+    party: {
+      icon: '/assets/img/quehay-marcador-bautek.svg'
+    }
+  };
   var party_location = {
     position: new google.maps.LatLng(25.464993, -100.978545),
     type: "party"
   };
-  console.log(party_location.position);
   var currentMarker = new google.maps.Marker({
+    icon: '/assets/img/quehay-marcador-bautek.svg',
     position: party_location.position,
     map: map
   });
