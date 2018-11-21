@@ -1,27 +1,4 @@
 #detalle
-  .contenedor
-    height: 850px
-    min-height: 100%
-    display: flex
-    justify-content: center
-    align-items: center
-    .cont-principal
-      .titulo
-        font-family: Lato
-        font-style: normal
-        font-weight: 300
-        line-height: normal
-        font-size: 60px
-        text-align: center
-        letter-spacing: 0.05em
-      .comentario
-        font-family: Lato
-        font-style: normal
-        font-weight: normal
-        line-height: normal
-        font-size: 16px
-        text-align: center
-      
   #detalle-intro
     position: relative
     .slide
@@ -51,61 +28,127 @@
         letter-spacing: 0.05em
         color: #FFFFFF
   #detalle-descripcion
-    .titulo
-      font-family: Lato
-      font-style: normal
-      font-weight: 300
-      line-height: normal
-      font-size: 60px
-      letter-spacing: 0.05em
-      color: #EA5F32
-    .subtitulo-1
-      font-family: Lato
-      font-style: normal
-      font-weight: bold
-      line-height: 31px
-      font-size: 20px
-      letter-spacing: 0.05em
-      color: #8F8F8F
-    .comentario-1
-      font-family: Lato
-      font-style: normal
-      font-weight: normal
-      line-height: 24px
-      font-size: 16px
-      color: #555555
-    .detalle-1
-      font-family: Lato
-      font-style: normal
-      font-weight: bold
-      line-height: 30px
-      font-size: 18px
-      letter-spacing: 0.05em
-      color: #8F8F8F
-    .detalle-2
-      font-family: Lato
-      font-style: normal
-      font-weight: normal
-      line-height: 32px
-      font-size: 18px
-      color: #555555
-    .subtitulo-2
-      font-family: Lato
-      font-style: normal
-      font-weight: 900
-      line-height: normal
-      font-size: 20px
-      letter-spacing: 0.05em
-      color: #474747
-    li
-      padding-left: 25px
-      background-position: 0px 10px
-      background-image: url(/assets/img/corchete.svg)
-      background-repeat: no-repeat
-    .comentario-2
-      font-family: Lato
-      font-style: normal
-      font-weight: normal
-      line-height: 24px
-      font-size: 16px
-      color: #555555
+    height: auto
+    padding-top: 60px
+    .detalle-izquierdo
+      height: auto
+      position: relative
+      padding-top: 30px
+      .titulo
+        font-family: Lato
+        font-style: normal
+        font-weight: 300
+        line-height: normal
+        font-size: 60px
+        letter-spacing: 0.05em
+        color: #EA5F32
+        margin-bottom: 20px
+      .subtitulo-1
+        font-family: Lato
+        font-style: normal
+        font-weight: bold
+        line-height: 31px
+        font-size: 20px
+        letter-spacing: 0.05em
+        color: #8F8F8F
+        margin-bottom: 20px
+      .comentario-1
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        line-height: 24px
+        font-size: 16px
+        color: #555555
+        margin-bottom: 30px
+      .detalle-1
+        font-family: Lato
+        font-style: normal
+        font-weight: bold
+        line-height: 30px
+        font-size: 18px
+        letter-spacing: 0.05em
+        color: #8F8F8F
+      .detalle-2
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        line-height: 32px
+        font-size: 18px
+        color: #555555
+      .subtitulo-2
+        font-family: Lato
+        font-style: normal
+        font-weight: 900
+        line-height: normal
+        font-size: 20px
+        letter-spacing: 0.05em
+        color: #474747
+        margin-top: 86px
+        margin-bottom: 20px
+      .subtitulo-3
+        font-family: Lato
+        font-style: normal
+        font-weight: 900
+        line-height: normal
+        font-size: 20px
+        letter-spacing: 0.05em
+        color: #474747
+        margin-top: 54px
+        margin-bottom: 20px
+      li
+        padding-left: 25px
+        background-position: 0px 10px
+        background-image: url(/assets/img/corchete.svg)
+        background-repeat: no-repeat
+      .comentario-2
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        line-height: 24px
+        font-size: 16px
+        color: #555555
+    .detalle-derecho
+      .detalle-imagen
+        width: 100%
+        height: auto
+        margin-bottom: 20px
+      .detalle-social
+        width: 36px
+        height: 36px
+        margin-right: 11px
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: #C4C4C4
+        cursor: pointer
+        &:hover
+          &.facebook
+            background-color: #2663BC
+          &.twitter
+            background-color: #00C7FF
+          &.whatsapp
+            background-color: #30BF39
+          &.share
+            background-color: #EA5F32
+          &.mail
+            background-color: #E9B041
+    .detalle-galeria
+      display: flex
+      align-items: center
+      justify-content: center
+      .titulo
+        font-family: Lato
+        font-style: normal
+        font-weight: 300
+        line-height: normal
+        font-size: 60px
+        text-align: center
+        letter-spacing: 0.05em
+        color: #E8603B
+        margin-top: 75px
+        margin-bottom: 75px
+      .galeria
+        padding: 25px
+        .plano
+          width: auto
+          height: 480px
