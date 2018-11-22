@@ -1,5 +1,7 @@
 var mapa;
 var loquehacemos = document.getElementById("mapa");
+var introSlider = document.getElementById("inicio-intro");
+
 var markersArray = [];
 var infowindow;
 
@@ -275,8 +277,8 @@ $(function() {
   if (loquehacemos) {
     loquehacemosMapa();
   }
-  $("#menu").on("click", function() {
-    $(this).toggleClass("active");
+  $("#menu").on("click", ".menu-btn", function() {
+    $("#menu").toggleClass("active");
     $("#menu-overlay").toggleClass("active");
     $("#principal").toggleClass("active");
   });
@@ -289,4 +291,15 @@ $(function() {
   $(".agendarcita-btn").on("click", function() {
     $("#agendarcita").toggleClass("active");
   });
+
+  if (introSlider) {
+    new fullpage("#inicio-intro", {
+      licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
+      autoScrolling: false,
+      fitToSection: false
+    });
+    setInterval(() => {
+      fullpage_api.moveSlideRight();
+    }, 5000);
+  }
 });
