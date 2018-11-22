@@ -1,6 +1,7 @@
 var mapa;
 var loquehacemos = document.getElementById("mapa");
 var introSlider = document.getElementById("inicio-intro");
+var introSliderVenta = document.getElementById("venta-intro");
 
 var markersArray = [];
 var infowindow;
@@ -294,6 +295,16 @@ $(function() {
 
   if (introSlider) {
     new fullpage("#inicio-intro", {
+      licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
+      autoScrolling: false,
+      fitToSection: false
+    });
+    setInterval(() => {
+      fullpage_api.moveSlideRight();
+    }, 5000);
+  }
+  if (introSliderVenta) {
+    new fullpage("#venta-intro", {
       licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
       autoScrolling: false,
       fitToSection: false
