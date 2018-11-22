@@ -189,11 +189,49 @@
       letter-spacing: 0.05em
       color: #8F8F8F
     .comentario
-        font-family: Roboto
+      font-family: Roboto
+      font-style: normal
+      font-weight: normal
+      line-height: 23px
+      font-size: 16px
+      color: #555555
+    .boton
+      width: auto
+      height: auto
+      margin-top: 30px
+      border: 3px solid $naranja
+      box-sizing: border-box
+      background-color: #fff
+      position: relative
+      display: inline-block
+      justify-content: center
+      align-items: center
+      cursor: pointer
+      padding-top: 5px
+      padding-bottom: 5px
+      padding-left: 40px
+      padding-right: 40px
+      transition: all 0.4s
+      .boton-img
+        display: inline-block
+        margin-right: 21px
+      .text
+        display: inline-block
+        color: #EA5F32
+        padding: 0
+        margin: 0
+        font-family: Lato
         font-style: normal
-        font-weight: normal
-        line-height: 23px
-        font-size: 16px
-        color: #555555
+        font-weight: 900
+        line-height: normal
+        font-size: 14px
+        letter-spacing: 0.1em
+      &:hover
+        background-color: $naranja
+
+        .boton-img
+          filter: brightness(100)
+        .text
+          color: $white
 
 
