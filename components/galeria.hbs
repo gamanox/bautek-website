@@ -8,18 +8,19 @@
     </div>
     <div class="row">
       <div class="col-12">
-          {{#each album}}
-          <div class="row">
-            <div class="album">
+        {{#each album}}
+          <div class="album mySlides">
+            <div class="row">
+              <h3 class="titulo">{{titulo}}</h3>
+            </div>
+            <div class="row">
               {{#each imagenes}}
                 <div class="col-4">
-                  <div class="img-conainer">
-                      <div class="imagenes">
-                          <img class="imagen" src="{{imagen}}" alt="">
-                          <div class="rollover-gal">
-                            <img src="/assets/img/mas.svg" alt="">
-                          </div>
-                      </div>
+                  <div class="imagenes">
+                    <img class="imagen" src="{{imagen}}" alt="">
+                    <div class="rollover-gal">
+                      <img src="/assets/img/mas.svg" alt="">
+                    </div>
                   </div>
                 </div>
               {{/each}}
@@ -28,6 +29,5 @@
         {{/each}}
       </div>
     </div>
-    
   </div>
 {{/with}}
