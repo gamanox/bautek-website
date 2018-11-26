@@ -66,136 +66,7 @@
         font-size: 14px
         letter-spacing: 0.1em
         cursor: pointer
-      
-  
-  .loquehacemos-desarrollos
-    .desarrollo
-      height: 540px
-      &.naranja
-        background-color: $naranja
-        color: $white
-        .desarrollos-texto
-          .titulo
-            color: $white
-          .comentario
-            color: $white
-          .boton
-            border: solid 3px $white
-            background-color: transparent
-            .text
-              color: $white
-            &:hover
-              background-color: $white
-              .text
-                color: $naranja
-      &.gris
-        background-color: #0B1924
-        color: $white
-        .desarrollos-texto
-          .titulo
-            color: $naranja
-          .comentario
-            color: $white
-          .boton
-            border: solid 3px $naranja
-            background-color: transparent
-            .text
-              color: $white
-            &:hover
-              background-color: $naranja
-              .text
-                color: $white
 
-      .desarrollos-imagen
-        width: 100%
-        height: 100%
-        background-size: cover
-        background-repeat: no-repeat
-        background-position: 50% 50%
-        position: relative
-        align-items: center
-        cursor: pointer
-        overflow: hidden
-        display: flex
-        justify-content: center
-        text-align: center
-        &:hover
-          .rollover-secc
-            opacity: 1
-        .rollover-secc
-          width: 90%
-          height: 90%
-          top: 5%
-          left: 5%
-          background-color: #ea5f32
-          transition: opacity 0.4s
-          position: absolute
-          opacity: 0
-          mix-blend-mode: multiply
-          display: flex
-          justify-content: center
-
-    .desarrollos-texto
-      align-items: center
-      position: relative
-      padding-top: 10%
-      padding-right: 15%
-      padding-left: 15%
-      .texto-contenedor
-        width: 85%
-      .titulo
-        display: block
-        font-family: Lato
-        font-style: normal
-        font-weight: 300
-        line-height: normal
-        +rem(font-size, 60px)
-        letter-spacing: 0.05em
-        color: #EA5F32
-      .comentario
-        font-style: normal
-        font-weight: normal
-        line-height: 24px
-        font-size: 16px
-        color: #555555
-      .boton
-        width: auto
-        height: auto
-        margin-top: 30px
-        border: 3px solid $naranja
-        box-sizing: border-box
-        background-color: #fff
-        position: relative
-        display: inline-block
-        justify-content: center
-        align-items: center
-        cursor: pointer
-        padding-top: 5px
-        padding-bottom: 5px
-        padding-left: 40px
-        padding-right: 40px
-        transition: all 0.4s
-        .boton-img
-          display: inline-block
-          margin-right: 21px
-        .text
-          display: inline-block
-          color: #EA5F32
-          padding: 0
-          margin: 0
-          font-family: Lato
-          font-style: normal
-          font-weight: 900
-          line-height: normal
-          font-size: 14px
-          letter-spacing: 0.1em
-        &:hover
-          background-color: $naranja
-          .boton-img
-            filter: brightness(100)
-          .text
-            color: $white
-            
 #loquehacemos-intro
   position: relative
   .slide
@@ -291,3 +162,44 @@
         font-size: 16px
         text-align: center
         color: #555555
+
+#loquehacemos-mapa
+  .m-titulo
+    display: flex
+    align-items: center
+    justify-content: center
+    .t-texto
+      font-family: Lato
+      font-style: normal
+      font-weight: 300
+      line-height: normal
+      font-size: 60px
+      text-align: center
+      letter-spacing: 0.05em
+      color: #E8603B
+      margin-bottom: 40px
+  .desarrollos
+    .lista
+      .media
+        height: auto
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-bottom: 30px
+        .mr-3
+          height: 100%
+        .media-body
+          .colonia
+            font-family: Roboto
+            font-style: normal
+            font-weight: bold
+            line-height: 21px
+            font-size: 16px
+            color: #555555
+          .direccion
+            font-family: Roboto
+            font-style: normal
+            font-weight: normal
+            line-height: 21px
+            font-size: 16px
+            color: #555555
