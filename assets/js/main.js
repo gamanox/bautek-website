@@ -2,6 +2,7 @@ var mapa;
 var loquehacemos = document.getElementById("mapa");
 var introSlider = document.getElementById("inicio-intro");
 var introSliderVenta = document.getElementById("venta-intro");
+var agendaCita = document.getElementById("agendarcita");
 
 var markersArray = [];
 var infowindow;
@@ -312,5 +313,10 @@ $(function() {
     setInterval(() => {
       fullpage_api.moveSlideRight();
     }, 5000);
+  }
+  if (agendaCita) {
+    setTimeout(() => {
+      $("#agendarcita").toggleClass("active");
+    }, 1500);
   }
 });

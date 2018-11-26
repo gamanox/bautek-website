@@ -1,33 +1,48 @@
 {{#with global}}
-  <div class="container" id="galeria">
-    <div class="row">
-      <div class="col-12">
-        <h1 class="seccion-titulo">{{galeria_titulo}}</h1>
-        <p class="seccion-descripcion">{{galeria_descripcion}}</p>
-      </div>
+<div class="container" id="galeria">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="seccion-titulo">{{galeria_titulo}}</h1>
+      <p class="seccion-descripcion">{{galeria_descripcion}}</p>
     </div>
-    <div class="row">
-      <div class="col-12">
-        {{#each album}}
-          <div class="album mySlides">
-            <div class="row">
-              <h3 class="titulo">{{titulo}}</h3>
-            </div>
-            <div class="row">
-              {{#each imagenes}}
-                <div class="col-4">
-                  <div class="imagenes">
-                    <img class="imagen" src="{{imagen}}" alt="">
-                    <div class="rollover-gal">
-                      <img src="/assets/img/mas.svg" alt="">
-                    </div>
-                  </div>
-                </div>
-              {{/each}}
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="album">
+        <div class="row">
+
+          {{#each album}}
+          {{!-- <div class="row">
+            <h3 class="titulo">{{titulo}}</h3>
+          </div> --}}
+          <div class="col-4">
+            <div class="imagenes">
+              <a data-fancybox-trigger="gallery" href="javascript:;" class="">
+                <img class="imagen" src="{{this.imagenes.0.imagen}}" alt="" />
+              </a>
+              <div class="rollover-gal">
+                <img src="/assets/img/mas.svg" alt="">
+              </div>
             </div>
           </div>
-        {{/each}}
+
+
+          {{#each imagenes}}
+          <div class="col-4 hidden">
+            <div class="imagenes">
+              <a href="{{imagen}}" data-fancybox="gallery" class="">
+                <img class="imagen" src="{{imagen}}" alt="" />
+              </a>
+              <div class="rollover-gal">
+                <img src="/assets/img/mas.svg" alt="">
+              </div>
+            </div>
+          </div>
+          {{/each}}
+          {{/each}}
+        </div>
       </div>
     </div>
   </div>
+</div>
 {{/with}}
