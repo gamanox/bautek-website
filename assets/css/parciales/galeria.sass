@@ -21,31 +21,32 @@
     font-size: 16px
     text-align: center
     color: #555555
-  .galeria
-    position: relative
-    align-items: center
-    cursor: pointer
-    overflow: hidden
-    display: flex
-    justify-content: center
-    text-align: center
-    flex-direction: column
-    height: auto
-    margin-bottom: 46px
-    .galeria-img
-      width: 100%
-      height: 100%
-    &:hover
-      .rollover-gal
-        opacity: 1
-    .rollover-gal
-      width: 80%
-      height: 80%
-      padding: 10%
-      background-color: #ea5f32
-      transition: opacity 0.4s
-      position: absolute
-      opacity: 0
-      mix-blend-mode: multiply
+  .album
+    .imagenes
+      position: relative
       display: flex
+      align-items: center
       justify-content: center
+      flex-direction: column
+      cursor: pointer
+      overflow: hidden
+      text-align: center
+      height: auto
+      margin-bottom: 46px
+      .imagen
+        width: 100%
+        height: 100%
+      &:hover
+        .rollover-gal
+          opacity: 1
+      .rollover-gal
+        width: 80%
+        height: 80%
+        padding: 10%
+        background-color: #ea5f32
+        transition: opacity 0.4s
+        position: absolute
+        opacity: 0
+        mix-blend-mode: multiply
+        display: flex
+        justify-content: center

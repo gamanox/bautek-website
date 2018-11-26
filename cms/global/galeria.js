@@ -1,5 +1,5 @@
-({
-	titulo: 'GALERÍA',
+{
+	titulo: 'GALERiA',
 	descripcion: 'Conoce algunos de nuestros desarrollos y descubre porque construir con nosotros es la mejor decisión.',
 	album: [
 		{
@@ -97,43 +97,43 @@
 			imagenes: [
 				{
 					$imagen_type: 'image',
-					imagen: '/remote/direct_uploads/1542934551_casa-3-imagen-01.jpg'
+					imagen: '/remote/direct_uploads/1543258371_casa-3-imagen-01.jpg'
 				},
 				{
 					$imagen_type: 'image',
-					imagen: '/remote/direct_uploads/1542934554_casa-3-imagen-02.jpg'
+					imagen: '/remote/direct_uploads/1543258375_casa-3-imagen-02.jpg'
 				},
 				{
 					$imagen_type: 'image',
-					imagen: '/remote/direct_uploads/1542934557_casa-3-imagen-03.jpg'
+					imagen: '/remote/direct_uploads/1543258379_casa-3-imagen-03.jpg'
 				},
 				{
 					$imagen_type: 'image',
-					imagen: '/remote/direct_uploads/1542934560_casa-3-imagen-04.jpg'
+					imagen: '/remote/direct_uploads/1543258384_casa-3-imagen-04.jpg'
 				},
 				{
 					$imagen_type: 'image',
-					imagen: '/remote/direct_uploads/1542934565_casa-3-imagen-05.jpg'
+					imagen: '/remote/direct_uploads/1543258387_casa-3-imagen-05.jpg'
 				},
 				{
 					$imagen_type: 'image',
-					imagen: '/remote/direct_uploads/1542934568_casa-3-imagen-06.jpg'
+					imagen: '/remote/direct_uploads/1543258390_casa-3-imagen-06.jpg'
 				},
 				{
 					$imagen_type: 'image',
-					imagen: '/remote/direct_uploads/1542934574_casa-3-imagen-07.jpg'
+					imagen: '/remote/direct_uploads/1543258396_casa-3-imagen-07.jpg'
 				},
 				{
 					$imagen_type: 'image',
-					imagen: '/remote/direct_uploads/1542934577_casa-3-imagen-08.jpg'
+					imagen: '/remote/direct_uploads/1543258398_casa-3-imagen-08.jpg'
 				},
 				{
 					$imagen_type: 'image',
-					imagen: '/remote/direct_uploads/1542934580_casa-3-imagen-09.jpg'
+					imagen: '/remote/direct_uploads/1543258402_casa-3-imagen-09.jpg'
 				},
 				{
 					$imagen_type: 'image',
-					imagen: '/remote/direct_uploads/1542934583_casa-3-imagen-10.jpg'
+					imagen: '/remote/direct_uploads/1543258406_casa-3-imagen-10.jpg'
 				}
 			]
 		},
@@ -142,29 +142,90 @@
 			imagenes: [
 				{
 					$imagen_type: 'image',
-					imagen: '/remote/direct_uploads/1542934824_casa-4-imagen-01.jpg'
+					imagen: '/remote/direct_uploads/1543258424_casa-4-imagen-01.jpg'
 				},
 				{
 					$imagen_type: 'image',
-					imagen: '/remote/direct_uploads/1542934827_casa-4-imagen-02.jpg'
+					imagen: '/remote/direct_uploads/1543258427_casa-4-imagen-02.jpg'
 				},
 				{
 					$imagen_type: 'image',
-					imagen: '/remote/direct_uploads/1542934830_casa-4-imagen-03.jpg'
+					imagen: '/remote/direct_uploads/1543258430_casa-4-imagen-03.jpg'
 				},
 				{
 					$imagen_type: 'image',
-					imagen: '/remote/direct_uploads/1542934833_casa-4-imagen-04.jpg'
+					imagen: '/remote/direct_uploads/1543258433_casa-4-imagen-04.jpg'
 				},
 				{
 					$imagen_type: 'image',
-					imagen: '/remote/direct_uploads/1542934837_casa-4-imagen-05.jpg'
+					imagen: '/remote/direct_uploads/1543258436_casa-4-imagen-05.jpg'
 				},
 				{
 					$imagen_type: 'image',
-					imagen: '/remote/direct_uploads/1542934841_casa-4-imagen-06.jpg'
+					imagen: '/remote/direct_uploads/1543258438_casa-4-imagen-06.jpg'
+				},
+				{
+					$imagen_type: 'image',
+					imagen: '/remote/direct_uploads/1543258461_casa-4-imagen-07.jpg'
+				},
+				{
+					$imagen_type: 'image',
+					imagen: '/remote/direct_uploads/1543258464_casa-4-imagen-08.jpg'
+				},
+				{
+					$imagen_type: 'image',
+					imagen: '/remote/direct_uploads/1543258466_casa-4-imagen-09.jpg'
+				},
+				{
+					$imagen_type: 'image',
+					imagen: '/remote/direct_uploads/1543258469_casa-4-imagen-10.jpg'
+				}
+			]
+		},
+		{
+			titulo: 'CASA 5:',
+			imagenes: [
+				{
+					$imagen_type: 'image',
+					imagen: '/remote/direct_uploads/1543258489_casa-5-imagen-01.jpg'
+				},
+				{
+					$imagen_type: 'image',
+					imagen: '/remote/direct_uploads/1543258493_casa-5-imagen-02.jpg'
+				},
+				{
+					$imagen_type: 'image',
+					imagen: '/remote/direct_uploads/1543258496_casa-5-imagen-03.jpg'
+				},
+				{
+					$imagen_type: 'image',
+					imagen: '/remote/direct_uploads/1543258498_casa-5-imagen-04.jpg'
+				},
+				{
+					$imagen_type: 'image',
+					imagen: '/remote/direct_uploads/1543258501_casa-5-imagen-05.jpg'
+				},
+				{
+					$imagen_type: 'image',
+					imagen: '/remote/direct_uploads/1543258504_casa-5-imagen-06.jpg'
+				},
+				{
+					$imagen_type: 'image',
+					imagen: '/remote/direct_uploads/1543258510_casa-5-imagen-07.jpg'
+				},
+				{
+					$imagen_type: 'image',
+					imagen: '/remote/direct_uploads/1543258512_casa-5-imagen-08.jpg'
+				},
+				{
+					$imagen_type: 'image',
+					imagen: '/remote/direct_uploads/1543258514_casa-5-imagen-09.jpg'
+				},
+				{
+					$imagen_type: 'image',
+					imagen: '/remote/direct_uploads/1543258516_casa-5-imagen-10.jpg'
 				}
 			]
 		}
 	]
-})
+}
