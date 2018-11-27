@@ -3,6 +3,7 @@ var loquehacemos = document.getElementById("mapa");
 var introSlider = document.getElementById("inicio-intro");
 var introSliderVenta = document.getElementById("venta-intro");
 var agendaCita = document.getElementById("agendarcita");
+var formContacto = document.getElementById("form-contacto");
 
 var markersArray = [];
 var infowindow;
@@ -314,6 +315,29 @@ $(function() {
       fullpage_api.moveSlideRight();
     }, 5000);
   }
+  if (formContacto) {
+    $("#form-contacto-send").on("click", function() {
+      var from = $("#contacto-email").val();
+      var name = $("#contacto-nombre").val();
+      var cell = $("#contacto-tel").val();
+      var msg = $("#contacto-msg").val();
+      var subj = "Formulario de contacto.";
+      var err = $("#contacto-error");
+
+      Email.send(
+        from,
+        "info@bautek.com.mx",
+        "Formulario de contacto",
+        msg,
+        "mail.bautek.com.mx",
+        "noreply@bautek.com.mx",
+        "p4r4n64r1",
+        function done(message) {
+          err.html("Su mensaje se ha enviado.");
+        }
+      );
+    });
+  }
   if (agendaCita) {
     setTimeout(() => {
       $("#agendarcita").toggleClass("active");
@@ -326,42 +350,6 @@ $(function() {
       var subj = "Me interesa agendar una cita.";
       var err = $("#agendar-error");
       var eTo = "noxwill@gmail.com";
-
-      // $(".error").hide();
-      // var hasError = false;
-
-      // if (from == "") {
-      //   err.html(
-      //     '<span class="error">Olvidó poner su correo electrónico.</span>'
-      //   );
-      //   hasError = true;
-      // }
-
-      // if (msg == "") {
-      //   err.html('<span class="error">Olvidó escribir un mensaje.</span>');
-      //   hasError = true;
-      // }
-
-      // if (hasError == false) {
-
-      //   $.post("/assets/php/sendmail.php", {
-      //     emailTo: eTo,
-      //     emailFrom: from,
-      //     subject: subj,
-      //     cellPhone: cell,
-      //     message: msg
-      //   })
-      //     .done(function(msg) {
-      //       err.html("Your email was sent.");
-      //     })
-      //     .fail(function(xhr, status, error) {
-      //       console.log(error);
-      //       console.log(xhr);
-      //       console.log(status);
-      //     });
-      // }
-
-      // return false;
 
       Email.send(
         from,
