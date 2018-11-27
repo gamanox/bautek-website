@@ -113,6 +113,14 @@
 		{
 			$imagen_type: 'image',
 			imagen: '/remote/direct_uploads/1543288515_fracc-modelo-1.jpg'
+		},
+		{
+			$imagen_type: 'image',
+			imagen: '/remote/direct_uploads/1543343751_modelo-1-img-2.jpg'
+		},
+		{
+			$imagen_type: 'image',
+			imagen: '/remote/direct_uploads/1543343755_modelo-1-img-3.jpg'
 		}
 	],
 	mostrar_planos: true,
@@ -121,6 +129,10 @@
 		{
 			$plano_type: 'image',
 			plano: '/remote/direct_uploads/1543288711_modelo-1-plano-1.jpg'
+		},
+		{
+			$plano_type: 'image',
+			plano: '/remote/direct_uploads/1543343759_modelo-1-plano-2.jpg'
 		}
 	]
 })

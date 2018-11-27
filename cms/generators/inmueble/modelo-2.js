@@ -113,6 +113,14 @@
 		{
 			$imagen_type: 'image',
 			imagen: '/remote/direct_uploads/1543289660_modelo-2-img-1.jpg'
+		},
+		{
+			$imagen_type: 'image',
+			imagen: '/remote/direct_uploads/1543343787_modelo-2-img-2.jpg'
+		},
+		{
+			$imagen_type: 'image',
+			imagen: '/remote/direct_uploads/1543343789_modelo-2-img-3.jpg'
 		}
 	],
 	mostrar_planos: true,
@@ -121,6 +129,10 @@
 		{
 			$plano_type: 'image',
 			plano: '/remote/direct_uploads/1543289663_modelo-2-plano-1.jpg'
+		},
+		{
+			$plano_type: 'image',
+			plano: '/remote/direct_uploads/1543343794_modelo-2-plano-2.jpg'
 		}
 	]
 })
