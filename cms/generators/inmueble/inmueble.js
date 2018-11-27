@@ -4,7 +4,8 @@
 	$imagen_principal_type: 'image',
 	imagen_principal: '',
 	titulo: '',
-	comentario: '',
+	comentario1: '',
+	comentario2: '',
 	subtitulo: '',
 	descripcion: '',
 	ubicacion: '',
@@ -13,7 +14,7 @@
 	terreno: '',
 	plantas: '',
 	recamaras: '',
-	baños: '',
+	banos: '',
 	inversion: '',
 	$caracteristicas_casa_min: 1,
 	caracteristicas_casa: [

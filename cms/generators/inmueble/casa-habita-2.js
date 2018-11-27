@@ -2,20 +2,20 @@
 	latitud: '',
 	longitud: '',
 	$imagen_principal_type: 'image',
-	imagen_principal: '/remote/direct_uploads/1543283374_casa_habita.jpg',
-	titulo: 'CASA DE UN PISO EN HABITA',
-	comentario1: '190 m2 de construcción. 2 recámaras 2 1/2 baños.',
-	comentario2: 'Inversión: $ 3’050,000',
-	subtitulo: 'Última casa de un piso en Habita Residencial',
-	descripcion: 'Hermosa casa de un piso con finos acabados en uno de los fraccionamientos más atractivos al norte de la ciudad.',
+	imagen_principal: '/remote/direct_uploads/1543286791_casa_habita_2.jpg',
+	titulo: 'CASA DE DOS PISOS EN HABITA',
+	comentario1: '242 m2 de construcción. 3 recámaras 3 1/2 baños.',
+	comentario2: 'Inversión: $ 3’750,000',
+	subtitulo: 'Aprovecha la preventa!',
+	descripcion: 'Hermosa casa de dos pisos en Habita Residencial para entrega en Abril de 2019.',
 	ubicacion: 'Saltillo, Coahuila',
-	direccion: 'Calle Granado 210 Fracc. Habita',
-	construccion: '190 m2',
-	terreno: '224 m2',
-	plantas: '1',
-	recamaras: '2 Recámaras',
-	banos: '2 1/2 baños',
-	inversion: '$3´050,000',
+	direccion: 'Calle Granado 230 Fracc. Habita',
+	construccion: '242 m2',
+	terreno: '220 m2',
+	plantas: '2',
+	recamaras: '3 Recámaras',
+	banos: '3 1/2 baños',
+	inversion: '$3’750,000',
 	$caracteristicas_casa_min: 1,
 	caracteristicas_casa: [
 		{
@@ -40,10 +40,16 @@
 			caracteristica: 'Estancia familiar'
 		},
 		{
-			caracteristica: 'Patio Terraza'
+			caracteristica: 'Terraza con jardín'
 		},
 		{
-			caracteristica: 'Walk-in closet equipados en ambas recámaras'
+			caracteristica: 'Recámara principal en planta baja'
+		},
+		{
+			caracteristica: 'Walk-in closet equipado en recámara principal'
+		},
+		{
+			caracteristica: 'Amplios closets en recámaras de planta alta'
 		},
 		{
 			caracteristica: 'Aislamiento térmico en azotea'
@@ -77,14 +83,14 @@
 	imagenes: [
 		{
 			$imagen_type: 'image',
-			imagen: '/remote/direct_uploads/1543279372_casa-habita-1-01.jpg'
+			imagen: '/remote/direct_uploads/1543287259_bautek_gris_grande.jpg'
 		}
 	],
 	$planos_min: 1,
 	planos: [
 		{
 			$plano_type: 'image',
-			plano: '/remote/direct_uploads/1543279458_casa-habita-1-p-01.jpg'
+			plano: '/remote/direct_uploads/1543287232_bautek-gris-jumbo.jpg'
 		}
 	]
 })
