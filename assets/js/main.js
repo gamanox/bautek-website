@@ -329,7 +329,7 @@ $(function() {
 
       $(".error").hide();
       var hasError = false;
-      var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
+      // var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
 
       // var from = $("#emailTo").val();
       if (from == "") {
