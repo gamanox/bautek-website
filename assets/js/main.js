@@ -337,9 +337,6 @@ $(function() {
           '<span class="error">Olvidó poner su correo electrónico.</span>'
         );
         hasError = true;
-      } else if (!emailReg.test(from)) {
-        err.html('<span class="error">Favor de poner un correo válido.</span>');
-        hasError = true;
       }
 
       // var emailFromVal = $("#emailFrom").val();
