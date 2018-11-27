@@ -318,5 +318,23 @@ $(function() {
     setTimeout(() => {
       $("#agendarcita").toggleClass("active");
     }, 1500);
+    $("#agendar-enviar").on("click", function() {
+      var from = $("#agendar-email");
+      var name = $("#agendar-nombre");
+      var cell = $("#agendar-celular");
+      var msg = $("#agendar-msg");
+      Email.send(
+        from,
+        "noxwill@gmail.com",
+        "Por favor agendarme una cita",
+        msg,
+        "smtp25.elasticemail.com",
+        "will.alvarez@gmail.com",
+        "7f25f0f2-a64c-4014-ab5a-77613e911092",
+        function done(message) {
+          alert("sent");
+        }
+      );
+    });
   }
 });

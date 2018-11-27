@@ -11,13 +11,13 @@
       <div class="album">
         <div class="row">
 
-          {{#each album}}
+          {{#each album as |album albumId|}}
           {{!-- <div class="row">
             <h3 class="titulo">{{titulo}}</h3>
           </div> --}}
           <div class="col-4 col-xl-3">
             <div class="imagenes">
-              <a data-fancybox-trigger="gallery" href="javascript:;" class="">
+              <a data-fancybox-trigger="gallery-{{albumId}}" href="javascript:;" class="">
                 <img class="imagen" src="{{this.imagenes.0.imagen}}" alt="" />
               </a>
               <div class="rollover-gal">
@@ -30,7 +30,7 @@
           {{#each imagenes}}
           <div class="col-4 hidden">
             <div class="imagenes">
-              <a href="{{imagen}}" data-fancybox="gallery" class="">
+              <a href="{{imagen}}" data-fancybox="gallery-{{albumId}}" class="">
                 <img class="imagen" src="{{imagen}}" alt="" />
               </a>
               <div class="rollover-gal">
