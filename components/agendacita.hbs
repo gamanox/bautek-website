@@ -8,23 +8,28 @@
     <form>
       <div class="form-group">
 
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre">
+        <input type="text" class="form-control" id="agendar-nombre" placeholder="Nombre">
       </div>
       <div class="form-group">
 
-        <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Email">
+        <input type="email" class="form-control" id="agendar-email" name="emailTo" placeholder="Email">
       </div>
       <div class="form-group">
 
-        <input type="tel" class="form-control" id="formGroupExampleInput2" placeholder="Número Celular">
+        <input type="tel" class="form-control" id="agendar-celular" name="cellPhone" placeholder="Número Celular">
+        <input type="text" class="form-control" id="agendar-subject" name="subject" placeholder="Asunto" value="Me interesa agendar una cita."
+          style="display: none;">
       </div>
       <div class="form-group">
 
-        <textarea type="text" class="form-control" id="formGroupExampleInput2" placeholder="Número Celular">
+        <textarea type="text" class="form-control" id="agendar-msg" name="message" placeholder="Mensaje">
           </textarea>
       </div>
       <div class="form-group">
-        <a href="#" class="boton">ENVIAR</a>
+        <a href="#" class="boton" id="agendar-enviar">ENVIAR</a>
+      </div>
+      <div class="form-group">
+        <p id="agendar-error"></p>
       </div>
     </form>
   </div>

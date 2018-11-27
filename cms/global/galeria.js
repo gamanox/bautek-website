@@ -1,5 +1,5 @@
 {
-	galeria_titulo: 'GALERiA',
+	galeria_titulo: 'GALERÍA',
 	galeria_descripcion: 'Conoce algunos de nuestros desarrollos y descubre porque construir con nosotros es la mejor decisión.',
 	album: [
 		{
