@@ -8,70 +8,16 @@
               <p class="titulo">{{titulo}}</p>
               <p class="subtitulo-1">{{subtitulo}}</p>
               <p class="comentario-1">{{descripcion}}</p>
+              {{#each detalles}}
               <div class="row">
                 <div class="col-4">
-                  <p class="inmueble-1">Ubicación:</p>
+                  <p class="inmueble-1">{{nombre}}:</p>
                 </div>
                 <div class="col-8">
-                  <p class="inmueble-2">{{ubicacion}}</p>
+                  <p class="inmueble-2">{{texto}}</p>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-4">
-                  <p class="inmueble-1">Dirección:</p>
-                </div>
-                <div class="col-8">
-                  <p class="inmueble-2">{{direccion}}</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <p class="inmueble-1">Construcción:</p>
-                </div>
-                <div class="col-8">
-                  <p class="inmueble-2">{{construccion}}</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <p class="inmueble-1">Terreno:</p>
-                </div>
-                <div class="col-8">
-                  <p class="inmueble-2">{{terreno}}</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <p class="inmueble-1">Plantas:</p>
-                </div>
-                <div class="col-8">
-                  <p class="inmueble-2">{{plantas}}</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <p class="inmueble-1">Recámaras:</p>
-                </div>
-                <div class="col-8">
-                  <p class="inmueble-2">{{recamaras}}</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <p class="inmueble-1">Baños:</p>
-                </div>
-                <div class="col-8">
-                  <p class="inmueble-2">{{banos}}</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <p class="inmueble-1">Inversión:</p>
-                </div>
-                <div class="col-8">
-                  <p class="inmueble-2">{{inversion}}</p>
-                </div>
-              </div>
+              {{/each}}
 
               <div class="row">
                 <div class="col-12">
