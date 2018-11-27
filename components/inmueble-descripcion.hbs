@@ -1,4 +1,4 @@
-<div class="" id="inmueble-descripcion">
+<div class="" id="inmueble-descripcion" data-lat="{{latitud}}" data-lng="{{longitud}}">
   <div class="container">
     <div class="row">
       <div class="col-5">
@@ -18,10 +18,10 @@
                 </div>
               </div>
               {{/each}}
-
+              {{#if mostrar_caracteristicas_inmueble}}
               <div class="row">
                 <div class="col-12">
-                  <p class="subtitulo-2">CARACTERÍSTICAS DE TU NUEVA CASA</p>
+                  <p class="subtitulo-2">CARACTERÍSTICAS DE INMUEBLE</p>
                   {{#each caracteristicas_casa}}
                   <li>
                     <p class="comentario-2">{{caracteristica}}</p>
@@ -29,6 +29,10 @@
                   {{/each}}
                 </div>
               </div>
+              {{/if}}
+
+              {{#if mostrar_caracteristicas_fraccionamiento}}
+
               <div class="row">
                 <div class="col-12">
                   <p class="subtitulo-3">SOBRE EL FRACCIONAMIENTO</p>
@@ -39,6 +43,7 @@
                   {{/each}}
                 </div>
               </div>
+              {{/if}}
             </div>
           </div>
         </div>
@@ -57,7 +62,9 @@
                 <div class="carousel-inner">
                   {{#each imagenes}}
                   <div class="carousel-item {{#if @first}}active{{/if}}">
-                    <img class="d-block w-100 inmueble-imagen" src="{{imagen}}" alt="">
+                    <a href="{{imagen}}" data-fancybox="galeria-detalle-inmueble">
+                      <img class="d-block inmueble-imagen" src="{{imagen}}" alt="">
+                    </a>
                   </div>
                   {{/each}}
 
@@ -101,6 +108,7 @@
       </div>
     </div>
   </div>
+  {{#if mostrar_planos}}
   <div class="inmueble-galeria">
     <div class="container planos">
       <div class="row">
@@ -116,7 +124,9 @@
               <div class="carousel-inner">
                 {{#each planos}}
                 <div class="carousel-item {{#if @first}}active{{/if}}">
-                  <img class="d-block w-100 plano" src="{{plano}}" alt="">
+                  <a href="{{plano}}" data-fancybox="galeria-planos-inmueble">
+                    <img class="d-block w-100 plano" src="{{plano}}" alt="">
+                  </a>
                 </div>
                 {{/each}}
 
@@ -136,4 +146,5 @@
       </div>
     </div>
   </div>
+  {{/if}}
 </div>

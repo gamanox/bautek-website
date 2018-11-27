@@ -9,13 +9,14 @@
   subtitulo: "",
   descripcion: "",
   detalles: [{ nombre: "", texto: "" }],
-
+  mostrar_caracteristicas_inmueble: false,
   $caracteristicas_casa_min: 1,
   caracteristicas_casa: [
     {
       caracteristica: ""
     }
   ],
+  mostrar_caracteristicas_fraccionamiento: false,
   $caracteristicas_fracc_min: 1,
   caracteristicas_fracc: [
     {
@@ -29,6 +30,7 @@
       imagen: ""
     }
   ],
+  mostrar_planos: false,
   $planos_min: 1,
   planos: [
     {
