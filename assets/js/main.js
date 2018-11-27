@@ -4,6 +4,7 @@ var introSlider = document.getElementById("inicio-intro");
 var introSliderVenta = document.getElementById("venta-intro");
 var agendaCita = document.getElementById("agendarcita");
 var formContacto = document.getElementById("form-contacto");
+var galeriaDetalle = document.getElementById("galeria-detalle");
 
 var markersArray = [];
 var infowindow;
@@ -365,4 +366,9 @@ $(function() {
       );
     });
   }
+  // if (galeriaDetalle) {
+  //   $("#galeria-detalle .carousel-item")
+  //     .first()
+  //     .addClass("active");
+  // }
 });
