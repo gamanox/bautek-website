@@ -365,7 +365,7 @@ $(function() {
 
       Email.send(
         from,
-        "noxwill@gmail.com",
+        "info@bautek.com.mx",
         "Por favor agendarme una cita",
         msg,
         "mail.bautek.com.mx",
