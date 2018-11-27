@@ -1,0 +1,25 @@
+<div class="seccion" id="inmueble-intro">
+  <div class="contenedor section">
+    {{!-- SLIDE INMUEBLE --}}
+    <div class="slide cont-principal" style="background-image: url({{inmueble_entry.imagen_principal}})">
+      <div>
+        <h1 class="titulo">{{inmueble_entry.titulo}}</h1>
+      </div>
+      <div>
+        <h3 class="comentario">{{inmueble_entry.comentario}} </h3>
+      </div>
+    </div>
+  </div>
+  <div class="breadcrumb">
+    <p>
+      INICIO <img src="/assets/img/breadcrumb-arrow.svg" alt=""> CASAS EN VENTA
+    </p>
+  </div>
+</div>
+<script>
+  new fullpage("#inmueble-intro", {
+    licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
+    autoScrolling: false,
+    fitToSection: false,
+  });
+</script>

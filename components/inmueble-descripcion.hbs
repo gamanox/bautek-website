@@ -1,0 +1,146 @@
+<div class="container" id="inmueble-descripcion">
+  <div class="row">
+    <div class="col-5">
+      <div class="inmueble-izquierdo">
+        <div class="row">
+          <div class="col-12">
+            <p class="titulo">{{inmueble_entry.titulo}}</p>
+            <p class="subtitulo-1">{{inmueble_entry.subtitulo}}</p>
+            <p class="comentario-1">{{inmueble_entry.descripcion}}</p>
+            <div class="row">
+              <div class="col-4">
+                <p class="inmueble-1">Ubicación:</p>
+              </div>
+              <div class="col-8">
+                <p class="inmueble-2">{{inmueble_entry.ubicacion}}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <p class="inmueble-1">Dirección:</p>
+              </div>
+              <div class="col-8">
+                <p class="inmueble-2">{{inmueble_entry.direccion}}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <p class="inmueble-1">Construcción:</p>
+              </div>
+              <div class="col-8">
+                <p class="inmueble-2">{{inmueble_entry.construccion}}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <p class="inmueble-1">Terreno:</p>
+              </div>
+              <div class="col-8">
+                  <p class="inmueble-2">{{inmueble_entry.terreno}}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <p class="inmueble-1">Plantas:</p>
+              </div>
+              <div class="col-8">
+                <p class="inmueble-2">{{inmueble_entry.plantas}}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <p class="inmueble-1">Recámaras:</p>
+              </div>
+              <div class="col-8">
+                <p class="inmueble-2">{{inmueble_entry.recamaras}}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <p class="inmueble-1">Baños:</p>
+              </div>
+              <div class="col-8">
+                <p class="inmueble-2">{{inmueble_entry.baños}}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <p class="inmueble-1">Inversión:</p>
+              </div>
+              <div class="col-8">
+                <p class="inmueble-2">{{inmueble_entry.inversion}}</p>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <p class="subtitulo-2">CARACTERÍSTICAS DE TU NUEVA CASA</p>
+                {{#each inmueble_entry.caracteristicas_casa}}
+                  <li>
+                    <p class="comentario-2">{{caracteristica}}</p>
+                  </li>
+                {{/each}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <p class="subtitulo-3">SOBRE EL FRACCIONAMIENTO</p>
+                {{#each inmueble_entry.caracteristicas_fracc}}
+                  <li>
+                    <p class="comentario-2">{{caracteristica}}</p>
+                  </li>
+                {{/each}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-7">
+      <div class="inmueble-derecho">
+        <div class="row">
+          <div class="col-12">
+            {{#each inmueble_entry.imagenes}}
+            <img class="inmueble-imagen" src="{{imagen}}" alt="">
+            {{/each}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="row">
+              
+                <div class="inmueble-social facebook">
+                  <img src="/assets/img/social-f.svg" alt="">
+                </div>
+                <div class="inmueble-social twitter">
+                  <img src="/assets/img/social-t.svg" alt="">
+                </div>
+                <div class="inmueble-social whatsapp">
+                  <img src="/assets/img/social-w.svg" alt="">
+                </div>
+                <div class="inmueble-social share">
+                  <img src="/assets/img/social-s.svg" alt="">
+                </div>
+                <div class="inmueble-social mail">
+                  <img src="/assets/img/social-m.svg" alt="">
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="inmueble-galeria">
+    <div class="row">
+      <div class="col-12">
+        <p class="titulo">PLANOS DE LA CASA</p>
+        <div class="galeria">
+          {{#each inmueble_entry.planos}}
+          <img class="plano" src="{{plano}}" alt="">
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
