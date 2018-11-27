@@ -319,22 +319,77 @@ $(function() {
       $("#agendarcita").toggleClass("active");
     }, 1500);
     $("#agendar-enviar").on("click", function() {
-      var from = $("#agendar-email");
-      var name = $("#agendar-nombre");
-      var cell = $("#agendar-celular");
-      var msg = $("#agendar-msg");
-      Email.send(
-        from,
-        "noxwill@gmail.com",
-        "Por favor agendarme una cita",
-        msg,
-        "smtp25.elasticemail.com",
-        "will.alvarez@gmail.com",
-        "7f25f0f2-a64c-4014-ab5a-77613e911092",
-        function done(message) {
-          alert("sent");
-        }
-      );
+      var from = $("#agendar-email").val();
+      var name = $("#agendar-nombre").val();
+      var cell = $("#agendar-celular").val();
+      var msg = $("#agendar-msg").val();
+      var subj = "Me interesa agendar una cita.";
+      var err = $("#agendar-error");
+      var eTo = "noxwill@gmail.com";
+
+      $(".error").hide();
+      var hasError = false;
+      var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
+
+      // var from = $("#emailTo").val();
+      if (from == "") {
+        err.html(
+          '<span class="error">Olvidó poner su correo electrónico.</span>'
+        );
+        hasError = true;
+      } else if (!emailReg.test(from)) {
+        err.html('<span class="error">Favor de poner un correo válido.</span>');
+        hasError = true;
+      }
+
+      // var emailFromVal = $("#emailFrom").val();
+      // if(emailFromVal == '') {
+      //  $("#emailFrom").after('<span class="error">You forgot to enter the email address to send from.</span>');
+      //  hasError = true;
+      // } else if(!emailReg.test(emailFromVal)) {
+      //  $("#emailFrom").after('<span class="error">Enter a valid email address to send from.</span>');
+      //  hasError = true;
+      // }
+
+      // var msg = $("#subject").val();
+      if (msg == "") {
+        err.html('<span class="error">Olvidó escribir un mensaje.</span>');
+        hasError = true;
+      }
+
+      if (hasError == false) {
+        // $(this).hide();
+        // $("#sendEmail li.buttons").append('<img src="/wp-content/themes/default/images/template/loading.gif" alt="Loading" id="loading" />');
+
+        $.post(
+          "/assets/php/sendmail.php",
+          {
+            emailTo: eTo,
+            emailFrom: from,
+            subject: subj,
+            cellPhone: cell,
+            message: msg
+          },
+          function(data) {
+            err.html("Your email was sent.");
+          }
+        );
+      }
+
+      return false;
+
+      // Email.send(
+      //   from,
+      //   "noxwill@gmail.com",
+      //   "Por favor agendarme una cita",
+      //   msg,
+      //   "smtp25.elasticemail.com",
+      //   "will.alvarez@gmail.com",
+      //   "7f25f0f2-a64c-4014-ab5a-77613e911092",
+      //   function done(message) {
+      //     alert("sent");
+      //   }
+      // );
     });
   }
 });
