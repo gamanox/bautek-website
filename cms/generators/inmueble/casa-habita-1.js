@@ -9,14 +9,41 @@
 	comentario2: 'Inversión: $ 3’050,000',
 	subtitulo: 'Última casa de un piso en Habita Residencial',
 	descripcion: 'Hermosa casa de un piso con finos acabados en uno de los fraccionamientos más atractivos al norte de la ciudad.',
-	ubicacion: 'Saltillo, Coahuila',
-	direccion: 'Calle Granado 210 Fracc. Habita',
-	construccion: '190 m2',
-	terreno: '224 m2',
-	plantas: '1',
-	recamaras: '2 Recámaras',
-	banos: '2 1/2 baños',
-	inversion: '$3´050,000',
+	detalles: [
+		{
+			nombre: 'ubicacion',
+			texto: 'Saltillo, Coahuila'
+		},
+		{
+			nombre: 'direccion',
+			texto: 'Calle Granado 210 Fracc. Habita'
+		},
+		{
+			nombre: 'construccion',
+			texto: '190 m2'
+		},
+		{
+			nombre: 'terreno',
+			texto: '224 m2'
+		},
+		{
+			nombre: 'plantas',
+			texto: '1'
+		},
+		{
+			nombre: 'recamaras',
+			texto: '2 Recámaras'
+		},
+		{
+			nombre: 'banos',
+			texto: '2 1/2 baños'
+		},
+		{
+			nombre: 'inversion',
+			texto: '$3´050,000'
+		}
+	],
+	mostrar_caracteristicas_inmueble: true,
 	$caracteristicas_casa_min: 1,
 	caracteristicas_casa: [
 		{
@@ -56,6 +83,7 @@
 			caracteristica: 'Piso porcelánico'
 		}
 	],
+	mostrar_caracteristicas_fraccionamiento: true,
 	$caracteristicas_fracc_min: 1,
 	caracteristicas_fracc: [
 		{
@@ -79,8 +107,29 @@
 		{
 			$imagen_type: 'image',
 			imagen: '/remote/direct_uploads/1543279372_casa-habita-1-01.jpg'
+		},
+		{
+			$imagen_type: 'image',
+			imagen: '/remote/direct_uploads/1543341498_galeria-casaunpiso-02.jpg'
+		},
+		{
+			$imagen_type: 'image',
+			imagen: '/remote/direct_uploads/1543341502_galeria-casaunpiso-03.jpg'
+		},
+		{
+			$imagen_type: 'image',
+			imagen: '/remote/direct_uploads/1543341505_galeria-casaunpiso-04.jpg'
+		},
+		{
+			$imagen_type: 'image',
+			imagen: '/remote/direct_uploads/1543341509_galeria-casaunpiso-05.jpg'
+		},
+		{
+			$imagen_type: 'image',
+			imagen: '/remote/direct_uploads/1543341513_galeria-casaunpiso-06.jpg'
 		}
 	],
+	mostrar_planos: true,
 	$planos_min: 1,
 	planos: [
 		{

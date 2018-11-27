@@ -3,6 +3,8 @@ var loquehacemos = document.getElementById("mapa");
 var introSlider = document.getElementById("inicio-intro");
 var introSliderVenta = document.getElementById("venta-intro");
 var agendaCita = document.getElementById("agendarcita");
+var formContacto = document.getElementById("form-contacto");
+var galeriaDetalle = document.getElementById("galeria-detalle");
 
 var markersArray = [];
 var infowindow;
@@ -314,6 +316,29 @@ $(function() {
       fullpage_api.moveSlideRight();
     }, 5000);
   }
+  if (formContacto) {
+    $("#form-contacto-send").on("click", function() {
+      var from = $("#contacto-email").val();
+      var name = $("#contacto-nombre").val();
+      var cell = $("#contacto-tel").val();
+      var msg = $("#contacto-msg").val();
+      var subj = "Formulario de contacto.";
+      var err = $("#contacto-error");
+
+      Email.send(
+        from,
+        "info@bautek.com.mx",
+        "Formulario de contacto",
+        msg,
+        "mail.bautek.com.mx",
+        "noreply@bautek.com.mx",
+        "p4r4n64r1",
+        function done(message) {
+          err.html("Su mensaje se ha enviado.");
+        }
+      );
+    });
+  }
   if (agendaCita) {
     setTimeout(() => {
       $("#agendarcita").toggleClass("active");
@@ -327,66 +352,23 @@ $(function() {
       var err = $("#agendar-error");
       var eTo = "noxwill@gmail.com";
 
-      $(".error").hide();
-      var hasError = false;
-      var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
-
-      // var from = $("#emailTo").val();
-      if (from == "") {
-        err.html(
-          '<span class="error">Olvidó poner su correo electrónico.</span>'
-        );
-        hasError = true;
-      }
-
-      // var emailFromVal = $("#emailFrom").val();
-      // if(emailFromVal == '') {
-      //  $("#emailFrom").after('<span class="error">You forgot to enter the email address to send from.</span>');
-      //  hasError = true;
-      // } else if(!emailReg.test(emailFromVal)) {
-      //  $("#emailFrom").after('<span class="error">Enter a valid email address to send from.</span>');
-      //  hasError = true;
-      // }
-
-      // var msg = $("#subject").val();
-      if (msg == "") {
-        err.html('<span class="error">Olvidó escribir un mensaje.</span>');
-        hasError = true;
-      }
-
-      if (hasError == false) {
-        // $(this).hide();
-        // $("#sendEmail li.buttons").append('<img src="/wp-content/themes/default/images/template/loading.gif" alt="Loading" id="loading" />');
-
-        $.post(
-          "/assets/php/sendmail.php",
-          {
-            emailTo: eTo,
-            emailFrom: from,
-            subject: subj,
-            cellPhone: cell,
-            message: msg
-          },
-          function(data) {
-            err.html("Your email was sent.");
-          }
-        );
-      }
-
-      return false;
-
-      // Email.send(
-      //   from,
-      //   "noxwill@gmail.com",
-      //   "Por favor agendarme una cita",
-      //   msg,
-      //   "smtp25.elasticemail.com",
-      //   "will.alvarez@gmail.com",
-      //   "7f25f0f2-a64c-4014-ab5a-77613e911092",
-      //   function done(message) {
-      //     alert("sent");
-      //   }
-      // );
+      Email.send(
+        from,
+        "info@bautek.com.mx",
+        "Por favor agendarme una cita",
+        msg,
+        "mail.bautek.com.mx",
+        "noreply@bautek.com.mx",
+        "p4r4n64r1",
+        function done(message) {
+          err.html("Su mensaje se ha enviado.");
+        }
+      );
     });
   }
+  // if (galeriaDetalle) {
+  //   $("#galeria-detalle .carousel-item")
+  //     .first()
+  //     .addClass("active");
+  // }
 });

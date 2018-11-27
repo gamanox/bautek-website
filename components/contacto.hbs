@@ -1,5 +1,5 @@
 <div id="contacto">
-  <div class="pide-informes container-fluid" >
+  <div class="pide-informes container-fluid">
 
     <div class="pide-informes-c">
 
@@ -88,14 +88,15 @@
         </div>
       </div>
       <div class="col-4">
-        <div class="contact-form">
+        <div class="contact-form" id="form-contacto">
           <h1 class="title">Envíanos un mensaje:</h1>
           <form action="">
-            <input class="nombre" type="text" name="name" placeholder="Nombre" />
-            <input class="email" type="email" name="e-mail" placeholder="E-mail" />
-            <input class="telefono" type="tel" name="phone" placeholder="Teléfono" />
-            <textarea class="comentarios" name="text" id="" rows="4" placeholder="Comentarios:"></textarea>
-            <button class="btn-send">ENVIAR</button>
+            <input id="contacto-nombre" class="nombre" type="text" name="name" placeholder="Nombre" />
+            <input id="contacto-email" class="email" type="email" name="e-mail" placeholder="E-mail" />
+            <input id="contacto-tel" class="telefono" type="tel" name="phone" placeholder="Teléfono" />
+            <textarea id="contacto-msg" class="comentarios" name="text" id="" rows="4" placeholder="Comentarios:"></textarea>
+            <button class="btn-send" id="form-contacto-send">ENVIAR</button>
+            <p id="contacto-error"></p>
           </form>
         </div>
       </div>

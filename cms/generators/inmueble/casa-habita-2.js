@@ -9,14 +9,41 @@
 	comentario2: 'Inversión: $ 3’750,000',
 	subtitulo: 'Aprovecha la preventa!',
 	descripcion: 'Hermosa casa de dos pisos en Habita Residencial para entrega en Abril de 2019.',
-	ubicacion: 'Saltillo, Coahuila',
-	direccion: 'Calle Granado 230 Fracc. Habita',
-	construccion: '242 m2',
-	terreno: '220 m2',
-	plantas: '2',
-	recamaras: '3 Recámaras',
-	banos: '3 1/2 baños',
-	inversion: '$3’750,000',
+	detalles: [
+		{
+			nombre: 'ubicacion',
+			texto: 'Saltillo, Coahuila'
+		},
+		{
+			nombre: 'direccion',
+			texto: 'Calle Granado 230 Fracc. Habita'
+		},
+		{
+			nombre: 'construccion',
+			texto: '242 m2'
+		},
+		{
+			nombre: 'terreno',
+			texto: '220 m2'
+		},
+		{
+			nombre: 'plantas',
+			texto: '2'
+		},
+		{
+			nombre: 'recamaras',
+			texto: '3 Recámaras'
+		},
+		{
+			nombre: 'banos',
+			texto: '3 1/2 baños'
+		},
+		{
+			nombre: 'inversion',
+			texto: '$3’750,000'
+		}
+	],
+	mostrar_caracteristicas_inmueble: true,
 	$caracteristicas_casa_min: 1,
 	caracteristicas_casa: [
 		{
@@ -62,6 +89,7 @@
 			caracteristica: 'Piso porcelánico'
 		}
 	],
+	mostrar_caracteristicas_fraccionamiento: true,
 	$caracteristicas_fracc_min: 1,
 	caracteristicas_fracc: [
 		{
@@ -87,6 +115,7 @@
 			imagen: '/remote/direct_uploads/1543287259_bautek_gris_grande.jpg'
 		}
 	],
+	mostrar_planos: false,
 	$planos_min: 1,
 	planos: [
 		{

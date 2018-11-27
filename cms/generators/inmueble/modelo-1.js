@@ -9,14 +9,41 @@
 	comentario2: 'PREVENTA: Casas desde  $3’500,000',
 	subtitulo: 'Aprovecha la preventa!',
 	descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-	ubicacion: 'Saltillo, Coahuila',
-	direccion: 'Lorem Ipsum',
-	construccion: '220 m2',
-	terreno: '200 m2',
-	plantas: '2',
-	recamaras: '3 Recámaras',
-	banos: '3 1/2 baños',
-	inversion: 'Desde $3’500,000',
+	detalles: [
+		{
+			nombre: 'ubicacion',
+			texto: 'Saltillo, Coahuila'
+		},
+		{
+			nombre: 'direccion',
+			texto: 'Lorem Ipsum'
+		},
+		{
+			nombre: 'construccion',
+			texto: '220 m2'
+		},
+		{
+			nombre: 'terreno',
+			texto: '200 m2'
+		},
+		{
+			nombre: 'plantas',
+			texto: '2'
+		},
+		{
+			nombre: 'recamaras',
+			texto: '3 Recámaras'
+		},
+		{
+			nombre: 'banos',
+			texto: '3 1/2 baños'
+		},
+		{
+			nombre: 'inversion',
+			texto: 'Desde $3’500,000'
+		}
+	],
+	mostrar_caracteristicas_inmueble: true,
 	$caracteristicas_casa_min: 1,
 	caracteristicas_casa: [
 		{
@@ -62,6 +89,7 @@
 			caracteristica: 'Piso porcelánico'
 		}
 	],
+	mostrar_caracteristicas_fraccionamiento: true,
 	$caracteristicas_fracc_min: 1,
 	caracteristicas_fracc: [
 		{
@@ -87,6 +115,7 @@
 			imagen: '/remote/direct_uploads/1543288515_fracc-modelo-1.jpg'
 		}
 	],
+	mostrar_planos: true,
 	$planos_min: 1,
 	planos: [
 		{

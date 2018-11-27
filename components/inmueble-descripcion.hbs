@@ -1,146 +1,150 @@
-<div class="container" id="inmueble-descripcion">
-  <div class="row">
-    <div class="col-5">
-      <div class="inmueble-izquierdo">
-        <div class="row">
-          <div class="col-12">
-            <p class="titulo">{{titulo1}}<br>{{titulo2}}</p>
-            <p class="subtitulo-1">{{subtitulo}}</p>
-            <p class="comentario-1">{{descripcion}}</p>
-            <div class="row">
-              <div class="col-4">
-                <p class="inmueble-1">Ubicación:</p>
-              </div>
-              <div class="col-8">
-                <p class="inmueble-2">{{ubicacion}}</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-4">
-                <p class="inmueble-1">Dirección:</p>
-              </div>
-              <div class="col-8">
-                <p class="inmueble-2">{{direccion}}</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-4">
-                <p class="inmueble-1">Construcción:</p>
-              </div>
-              <div class="col-8">
-                <p class="inmueble-2">{{construccion}}</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-4">
-                <p class="inmueble-1">Terreno:</p>
-              </div>
-              <div class="col-8">
-                  <p class="inmueble-2">{{terreno}}</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-4">
-                <p class="inmueble-1">Plantas:</p>
-              </div>
-              <div class="col-8">
-                <p class="inmueble-2">{{plantas}}</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-4">
-                <p class="inmueble-1">Recámaras:</p>
-              </div>
-              <div class="col-8">
-                <p class="inmueble-2">{{recamaras}}</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-4">
-                <p class="inmueble-1">Baños:</p>
-              </div>
-              <div class="col-8">
-                <p class="inmueble-2">{{banos}}</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-4">
-                <p class="inmueble-1">Inversión:</p>
-              </div>
-              <div class="col-8">
-                <p class="inmueble-2">{{inversion}}</p>
-              </div>
-            </div>
-            
-            <div class="row">
-              <div class="col-12">
-                <p class="subtitulo-2">CARACTERÍSTICAS DE TU NUEVA CASA</p>
-                {{#each caracteristicas_casa}}
-                  <li>
-                    <p class="comentario-2">{{caracteristica}}</p>
-                  </li>
-                {{/each}}
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <p class="subtitulo-3">SOBRE EL FRACCIONAMIENTO</p>
-                {{#each caracteristicas_fracc}}
-                  <li>
-                    <p class="comentario-2">{{caracteristica}}</p>
-                  </li>
-                {{/each}}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-7">
-      <div class="inmueble-derecho">
-        <div class="row">
-          <div class="col-12">
-            {{#each imagenes}}
-            <img class="inmueble-imagen" src="{{imagen}}" alt="">
-            {{/each}}
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <div class="row">
-              
-                <div class="inmueble-social facebook">
-                  <img src="/assets/img/social-f.svg" alt="">
-                </div>
-                <div class="inmueble-social twitter">
-                  <img src="/assets/img/social-t.svg" alt="">
-                </div>
-                <div class="inmueble-social whatsapp">
-                  <img src="/assets/img/social-w.svg" alt="">
-                </div>
-                <div class="inmueble-social share">
-                  <img src="/assets/img/social-s.svg" alt="">
-                </div>
-                <div class="inmueble-social mail">
-                  <img src="/assets/img/social-m.svg" alt="">
-                </div>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="inmueble-galeria">
+<div class="" id="inmueble-descripcion" data-lat="{{latitud}}" data-lng="{{longitud}}">
+  <div class="container">
     <div class="row">
-      <div class="col-12">
-        <p class="titulo">PLANOS DE LA CASA</p>
-        <div class="galeria">
-          {{#each planos}}
-          <img class="plano" src="{{plano}}" alt="">
-          {{/each}}
+      <div class="col-5">
+        <div class="inmueble-izquierdo">
+          <div class="row">
+            <div class="col-12">
+              <p class="titulo">{{titulo}}</p>
+              <p class="subtitulo-1">{{subtitulo}}</p>
+              <p class="comentario-1">{{descripcion}}</p>
+              {{#each detalles}}
+              <div class="row">
+                <div class="col-4">
+                  <p class="inmueble-1">{{nombre}}:</p>
+                </div>
+                <div class="col-8">
+                  <p class="inmueble-2">{{texto}}</p>
+                </div>
+              </div>
+              {{/each}}
+              {{#if mostrar_caracteristicas_inmueble}}
+              <div class="row">
+                <div class="col-12">
+                  <p class="subtitulo-2">CARACTERÍSTICAS DE INMUEBLE</p>
+                  {{#each caracteristicas_casa}}
+                  <li>
+                    <p class="comentario-2">{{caracteristica}}</p>
+                  </li>
+                  {{/each}}
+                </div>
+              </div>
+              {{/if}}
+
+              {{#if mostrar_caracteristicas_fraccionamiento}}
+
+              <div class="row">
+                <div class="col-12">
+                  <p class="subtitulo-3">SOBRE EL FRACCIONAMIENTO</p>
+                  {{#each caracteristicas_fracc}}
+                  <li>
+                    <p class="comentario-2">{{caracteristica}}</p>
+                  </li>
+                  {{/each}}
+                </div>
+              </div>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-7">
+        <div class="inmueble-derecho">
+          <div class="row">
+            <div class="col-12">
+              <div id="galeria-detalle" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  {{#each imagenes}}
+                  <li data-target="#galeria-detalle" data-slide-to="{{@index}}" class="{{#if @first}}active{{/if}}"></li>
+                  {{/each}}
+
+                </ol>
+                <div class="carousel-inner">
+                  {{#each imagenes}}
+                  <div class="carousel-item {{#if @first}}active{{/if}}">
+                    <a href="{{imagen}}" data-fancybox="galeria-detalle-inmueble">
+                      <img class="d-block inmueble-imagen" src="{{imagen}}" alt="">
+                    </a>
+                  </div>
+                  {{/each}}
+
+                </div>
+                <a class="carousel-control-prev" href="#galeria-detalle" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#galeria-detalle" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="row">
+
+                <a href="https://www.facebook.com/sharer/sharer.php?u=www.bautek.com.mx%2Fventa" target="_blank" class="inmueble-social facebook">
+                  <img src="/assets/img/social-f.svg" alt="">
+                </a>
+                <a href="https://twitter.com/home?status=www.bautek.com.mx/venta" target="_blank" class="inmueble-social twitter">
+                  <img src="/assets/img/social-t.svg" alt="">
+                </a>
+                <a href="whatsapp://send?text=http://www.bautek.com.mx/venta" data-action="share/whatsapp/share" class="inmueble-social whatsapp">
+                  <img src="/assets/img/social-w.svg" alt="">
+                </a>
+                <a class="inmueble-social share">
+                  <img src="/assets/img/social-s.svg" alt="">
+                </a>
+                <a href="mailto:?&body=www.bautek.com.mx/venta" target="_blank" class="inmueble-social mail">
+                  <img src="/assets/img/social-m.svg" alt="">
+                </a>
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  {{#if mostrar_planos}}
+  <div class="inmueble-galeria">
+    <div class="container planos">
+      <div class="row">
+        <div class="col-12">
+          <p class="titulo">PLANOS DE LA CASA</p>
+          <div class="galeria">
+            <div id="galeria-planos" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                {{#each planos}}
+                <li data-target="#galeria-planos" data-slide-to="{{@index}}" class="{{#if @first}}active{{/if}}"></li>
+                {{/each}}
+              </ol>
+              <div class="carousel-inner">
+                {{#each planos}}
+                <div class="carousel-item {{#if @first}}active{{/if}}">
+                  <a href="{{plano}}" data-fancybox="galeria-planos-inmueble">
+                    <img class="d-block w-100 plano" src="{{plano}}" alt="">
+                  </a>
+                </div>
+                {{/each}}
+
+              </div>
+              <a class="carousel-control-prev" href="#galeria-planos" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#galeria-planos" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/if}}
 </div>
