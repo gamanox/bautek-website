@@ -161,9 +161,30 @@
         <div class="col-12">
           <p class="titulo">PLANOS DE LA CASA</p>
           <div class="galeria">
-            {{#each planos}}
-            <img class="plano" src="{{plano}}" alt="">
-            {{/each}}
+            <div id="galeria-planos" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                {{#each planos}}
+                <li data-target="#galeria-planos" data-slide-to="{{@index}}" class="{{#if @first}}active{{/if}}"></li>
+                {{/each}}
+              </ol>
+              <div class="carousel-inner">
+                {{#each planos}}
+                <div class="carousel-item {{#if @first}}active{{/if}}">
+                  <img class="d-block w-100 plano" src="{{plano}}" alt="">
+                </div>
+                {{/each}}
+
+              </div>
+              <a class="carousel-control-prev" href="#galeria-planos" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#galeria-planos" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
           </div>
         </div>
       </div>
