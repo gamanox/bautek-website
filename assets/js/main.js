@@ -324,17 +324,34 @@ $(function() {
       var msg = $("#contacto-msg").val();
       var subj = "Formulario de contacto.";
       var err = $("#contacto-error");
+      var cuerpo =
+        "Hola mi nombre es " +
+        name +
+        ", mi teléfono " +
+        cell +
+        " y mi correo " +
+        from +
+        ". " +
+        msg;
+
+      err.html("Enviando mensaje.");
 
       Email.send(
-        from,
-        "info@bautek.com.mx",
+        "noreply@bautek.com.mx",
+        "mgarcia.eguia@gmail.com",
         "Formulario de contacto",
-        msg,
+        cuerpo,
         "mail.bautek.com.mx",
         "noreply@bautek.com.mx",
         "p4r4n64r1",
         function done(message) {
           err.html("Su mensaje se ha enviado.");
+          setTimeout(() => {
+            $("#form-contacto")
+              .find("input,textarea")
+              .val("");
+            err.html("");
+          }, 3000);
         }
       );
     });
@@ -351,17 +368,34 @@ $(function() {
       var subj = "Me interesa agendar una cita.";
       var err = $("#agendar-error");
       var eTo = "noxwill@gmail.com";
+      var cuerpo =
+        "Hola mi nombre es " +
+        name +
+        ", mi teléfono " +
+        cell +
+        " y mi correo " +
+        from +
+        ". " +
+        msg;
+
+      err.html("Enviando mensaje.");
 
       Email.send(
-        from,
-        "info@bautek.com.mx",
+        "noreply@bautek.com.mx",
+        "mgarcia.eguia@gmail.com",
         "Por favor agendarme una cita",
-        msg,
+        cuerpo,
         "mail.bautek.com.mx",
         "noreply@bautek.com.mx",
         "p4r4n64r1",
         function done(message) {
-          err.html("Su mensaje se ha enviado.");
+          err.html("Mensaje enviado.");
+          setTimeout(() => {
+            $("#agendarcita")
+              .find("input,textarea")
+              .val("");
+            err.html("");
+          }, 3000);
         }
       );
     });
