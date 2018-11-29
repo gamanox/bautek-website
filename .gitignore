@@ -5,3 +5,4 @@
 /_generated/*
 enduro_secret.json
 /juicebox
+package-lock.json
