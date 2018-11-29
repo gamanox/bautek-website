@@ -3,12 +3,12 @@
 	longitud: '',
 	$imagen_principal_type: 'image',
 	imagen_principal: '/remote/direct_uploads/1543289649_modelo-2-full.jpg',
-	titulo1: 'CASA DE DOS PISOS',
-	titulo2: 'EN HABITA',
-	comentario1: '242 m2 de construcción. 3 recámaras 3 1/2 baños.',
-	comentario2: 'Inversión: $ 3’750,000',
+	titulo1: 'MODELO 2',
+	titulo2: '',
+	comentario1: '220 m2 de construcción. 3 recámaras 3 1/2 baños.',
+	comentario2: 'PREVENTA: Casas desde  $3’500,000',
 	subtitulo: 'Aprovecha la preventa!',
-	descripcion: 'Hermosa casa de dos pisos en Habita Residencial para entrega en Abril de 2019.',
+	descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 	detalles: [
 		{
 			nombre: 'ubicacion',
@@ -20,11 +20,11 @@
 		},
 		{
 			nombre: 'construccion',
-			texto: '242 m2'
+			texto: '220 m2'
 		},
 		{
 			nombre: 'terreno',
-			texto: '220 m2'
+			texto: '200 m2'
 		},
 		{
 			nombre: 'plantas',
@@ -40,7 +40,7 @@
 		},
 		{
 			nombre: 'inversion',
-			texto: '$3’750,000'
+			texto: 'Desde $3’500,000'
 		}
 	],
 	mostrar_caracteristicas_inmueble: true,
@@ -56,10 +56,7 @@
 			caracteristica: 'Amplia cocina equipada'
 		},
 		{
-			caracteristica: 'Sala'
-		},
-		{
-			caracteristica: 'Comedor'
+			caracteristica: 'Sala / Comedor'
 		},
 		{
 			caracteristica: 'Lavandería'
