@@ -11,13 +11,15 @@
         <h1 class="titulo">{{subtitulo_renglon_1}}<br>{{subtitulo_renglon_2}}</h1>
       </div>
       <div>
-        <h3 class="comentario">{{comentario_renglon_1}}<br>{{comentario_renglon_2}}</h3>
+        <h3 class="comentario">{{descripcion_renglon_1}}<br>{{descripcion_renglon_2}}</h3>
       </div>
+      {{#if activar_boton}}
       <div class="link">
-        <p>
-          <a href="{{boton_link}}" class="boton">{{boton_texto}}</a>
-        </p>
-      </div>
+          <p>
+            <a href="{{boton_link}}" class="boton">{{boton_texto}}</a>
+          </p>
+        </div>
+      {{/if}}
     </div>
   {{/each}}
     <!-- {{!-- SLIDE EN BAUTEK --}}
