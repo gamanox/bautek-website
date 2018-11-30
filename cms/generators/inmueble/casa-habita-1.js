@@ -3,6 +3,8 @@
 	longitud: '',
 	$imagen_principal_type: 'image',
 	imagen_principal: '/remote/direct_uploads/1543283374_casa_habita.jpg',
+	$imagen_chica_type: 'image',
+	imagen_chica: '/remote/direct_uploads/1543608183_casa-1-chica.jpg',
 	titulo1: 'CASA DE UN PISO',
 	titulo2: 'EN HABITA',
 	comentario1: '190 m2 de construcción. 2 recámaras 2 1/2 baños.',

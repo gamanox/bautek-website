@@ -3,6 +3,8 @@
 	longitud: '',
 	$imagen_principal_type: 'image',
 	imagen_principal: '/remote/direct_uploads/1543336345_habita-slider.jpg',
+	$imagen_chica_type: 'image',
+	imagen_chica: '',
 	titulo: 'LOTES DISPONIBLES EN HABITA',
 	comentario1: 'Lorem Ipsum',
 	comentario2: '',

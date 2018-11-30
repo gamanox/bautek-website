@@ -3,6 +3,8 @@
   longitud: "",
   $imagen_principal_type: "image",
   imagen_principal: "",
+  $imagen_chica_type: 'image',
+	imagen_chica: '',
   titulo1: "",
   titulo2: "",
   comentario1: "",

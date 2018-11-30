@@ -2,8 +2,9 @@
   latitud: "",
   longitud: "",
   $imagen_principal_type: "image",
-  imagen_principal:
-    "/remote/direct_uploads/1543340180_slider-lote-villanatura.jpg",
+  imagen_principal: "/remote/direct_uploads/1543340180_slider-lote-villanatura.jpg",
+  $imagen_chica_type: 'image',
+	imagen_chica: '',
   titulo: "LOTES EN VENTA EN VILLANATURA",
   comentario1: "Lorem Ipsum",
   comentario2: "",

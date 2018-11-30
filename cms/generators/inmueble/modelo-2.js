@@ -3,6 +3,8 @@
 	longitud: '',
 	$imagen_principal_type: 'image',
 	imagen_principal: '/remote/direct_uploads/1543289649_modelo-2-full.jpg',
+	$imagen_chica_type: 'image',
+	imagen_chica: '/remote/direct_uploads/1543607968_modelo-2-chica.jpg',
 	titulo1: 'MODELO 2',
 	titulo2: '',
 	comentario1: '220 m2 de construcción. 3 recámaras 3 1/2 baños.',

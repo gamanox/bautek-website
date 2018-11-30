@@ -3,6 +3,8 @@
 	longitud: '',
 	$imagen_principal_type: 'image',
 	imagen_principal: '/remote/direct_uploads/1543286791_casa_habita_2.jpg',
+	$imagen_chica_type: 'image',
+	imagen_chica: '/remote/direct_uploads/1543608195_casa-2-chica.jpg',
 	titulo1: 'CASA DE DOS PISOS',
 	titulo2: 'EN HABITA',
 	comentario1: '242 m2 de construcción. 3 recámaras 3 1/2 baños.',

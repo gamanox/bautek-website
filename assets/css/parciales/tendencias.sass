@@ -1,7 +1,5 @@
 .tendencias
-  display: flex
-  align-items: center
-  justify-content: center
+  height: auto
   .titulo
     font-family: Lato
     font-style: normal
@@ -12,29 +10,39 @@
     letter-spacing: 0.05em
     color: #E8603B
   .tendencia
+    height: auto
     position: relative
     display: flex
     align-items: center
     justify-content: center
     flex-direction: column
-    img
-      width: 100px
-      height: auto
-    &:hover
-      .rollover-gal
-        opacity: 1
-    .rollover-gal
-      pointer-events: none
-      width: 80%
-      height: 80%
-      padding: 10%
-      background-color: #ea5f32
-      transition: opacity 0.4s
-      position: absolute
-      opacity: 0
-      mix-blend-mode: multiply
+    .imagen-ch
+      position: relative
       display: flex
+      align-items: center
       justify-content: center
+      flex-direction: column
+      cursor: pointer
+      text-align: center
+      height: auto
+      img
+        width: 100px
+        height: 100px
+      &:hover
+        .rollover-gal
+          opacity: 1
+      .rollover-gal
+        pointer-events: none
+        width: 80%
+        height: 80%
+        padding: 10%
+        background-color: #ea5f32
+        transition: opacity 0.4s
+        position: absolute
+        opacity: 0
+        mix-blend-mode: multiply
+        display: flex
+        justify-content: center
     .subtitulo
       font-family: Lato
       font-style: normal
