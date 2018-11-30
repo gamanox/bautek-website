@@ -1,6 +1,10 @@
-.tendencias
+#tendencias
+  background-color: #F6F6F6
+  position: relative
   height: auto
-  .titulo
+  .seccion-titulo
+    padding-top: 65px
+    margin-bottom: 20px
     font-family: Lato
     font-style: normal
     font-weight: 300
@@ -9,14 +13,29 @@
     text-align: center
     letter-spacing: 0.05em
     color: #E8603B
-  .tendencia
-    height: auto
-    position: relative
-    display: flex
-    align-items: center
-    justify-content: center
-    flex-direction: column
-    .imagen-ch
+  .seccion-descripcion
+    padding-bottom: 26px
+    font-family: Lato
+    font-style: normal
+    font-weight: 500
+    line-height: normal
+    font-size: 16px
+    text-align: center
+    color: #555555
+  .album
+    margin-bottom: 40px
+    .hidden
+      display: none
+    .titulo
+      font-family: Lato
+      font-style: normal
+      font-weight: 300
+      line-height: normal
+      font-size: 60px
+      text-align: center
+      letter-spacing: 0.05em
+      color: #E8603B
+    .imagenes
       position: relative
       display: flex
       align-items: center
@@ -25,14 +44,14 @@
       cursor: pointer
       text-align: center
       height: auto
-      img
-        width: 100px
-        height: 100px
+      margin-bottom: 46px
+      .imagen
+        width: 100%
+        height: auto
       &:hover
         .rollover-gal
           opacity: 1
       .rollover-gal
-        pointer-events: none
         width: 80%
         height: 80%
         padding: 10%

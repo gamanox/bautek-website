@@ -1,5 +1,5 @@
 {{#inmueble}}
-<div class="container-fluid" id="galeria">
+<div class="container-fluid" id="tendencias">
   <div class="row">
     <div class="col-12">
       <h1 class="seccion-titulo">TE PUEDE INTERESAR</h1>
@@ -14,9 +14,9 @@
             <div class="col-4">
               <div class="imagenes">
                 <img class="imagen" src="{{inmueble_entry.imagen_chica}}" alt="" />
-                <div class="rollover-gal">
+                <a href="/inmueble/{{page_slug}}" class="rollover-gal">
                   <img src="/assets/img/mas.svg" alt="">
-                </div>
+                </a>
               </div>
               <p class="subtitulo">{{inmueble_entry.titulo1}} {{inmueble_entry.titulo2}}</p>
               <p class="comentario">{{inmueble_entry.comentario1}}<br>{{inmueble_entry.comentario2}}</p>
