@@ -5,7 +5,10 @@
         <div class="inmueble-izquierdo">
           <div class="row">
             <div class="col-12">
-              <p class="titulo">{{titulo}}</p>
+              {{#each this as |current currentId|}}
+                {{@key}}: {{current}}
+              {{/each}}
+              <p class="titulo">{{titulo1}} / / {{_view}} / {{_view.contentIndex}}</p>
               <p class="subtitulo-1">{{subtitulo}}</p>
               <p class="comentario-1">{{descripcion}}</p>
               {{#each detalles}}

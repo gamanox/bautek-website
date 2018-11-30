@@ -1,0 +1,54 @@
+.tendencias
+  display: flex
+  align-items: center
+  justify-content: center
+  .titulo
+    font-family: Lato
+    font-style: normal
+    font-weight: 300
+    line-height: normal
+    font-size: 60px
+    text-align: center
+    letter-spacing: 0.05em
+    color: #E8603B
+  .tendencia
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    img
+      width: 100px
+      height: auto
+    &:hover
+      .rollover-gal
+        opacity: 1
+    .rollover-gal
+      pointer-events: none
+      width: 80%
+      height: 80%
+      padding: 10%
+      background-color: #ea5f32
+      transition: opacity 0.4s
+      position: absolute
+      opacity: 0
+      mix-blend-mode: multiply
+      display: flex
+      justify-content: center
+    .subtitulo
+      font-family: Lato
+      font-style: normal
+      font-weight: 900
+      line-height: normal
+      font-size: 20px
+      text-align: center
+      letter-spacing: 0.05em
+      color: #474747
+    .comentario
+      font-family: Lato
+      font-style: normal
+      font-weight: normal
+      line-height: normal
+      font-size: 18px
+      text-align: center
+      color: #555555

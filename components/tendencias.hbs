@@ -1,0 +1,47 @@
+{{#with inmueble}}
+<div class="container-fluid" id="tendencias">
+  <div class="row">
+    <div class="col-12">
+      <div class="container tendencias">
+        <h1 class="titulo"></h1>
+
+        <div class="row">
+          <div class="col-4">
+            <div class="tendencia">
+              <img src="{{casa-2.imagen}}" alt="">
+              <div class="rollover-gal">
+                <img src="/assets/img/mas.svg" alt="">
+              </div>
+              <p class="subtitulo">{{modelo-2.titulo1}} {{modelo-2.titulo2}}</p>
+              <p class="comentario">{{modelo-2.comentario1}}<br>{{modelo-2.comentario2}}</p>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="container tendencia">
+              <img src="{{casa-1.imagen}}" alt="">
+              <div class="rollover-gal">
+                <img src="/assets/img/mas.svg" alt="">
+              </div>
+              <p class="subtitulo">{{casa-1.titulo1}} {{casa-2.titulo2}}</p>
+              <p class="comentario">{{casa-1.comentario1}}<br>{{casa-1.comentario2}}</p>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="container tendencia">
+              <img src="{{casa-2.imagen}}" alt="">
+              <div class="rollover-gal">
+                <img src="/assets/img/mas.svg" alt="">
+              </div>
+              <p class="subtitulo">{{casa-1.titulo1}} {{casa-1.titulo2}}</p>
+              <p class="comentario">{{casa-1.comentario1}}<br>{{casa-1.comentario2}}</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+{{/with}}
