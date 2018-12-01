@@ -23,7 +23,7 @@
 				descripcion_renglon_2: 'Inversión: $ 3’050,000',
 				activar_boton: true,
 				boton_texto: 'CONOCER MÁS',
-				boton_link: '/inmueble/casa-1'
+				boton_link: '/inmueble/casa-habita-1'
 			},
 			{
 				$slide_imagen_type: 'image',
@@ -35,7 +35,7 @@
 				descripcion_renglon_2: 'Inversión: $ 3’750,000',
 				activar_boton: true,
 				boton_texto: 'CONOCER MÁS',
-				boton_link: '/inmueble/casa-2'
+				boton_link: '/inmueble/casa-habita-2'
 			},
 			{
 				$slide_imagen_type: 'image',
