@@ -1,6 +1,6 @@
 ({
-	latitud: '',
-	longitud: '',
+	latitud: '25.472472',
+	longitud: '-100.934528',
 	$imagen_principal_type: 'image',
 	imagen_principal: '/remote/direct_uploads/1543288653_modelo-1-full.jpg',
 	$imagen_chica_type: 'image',

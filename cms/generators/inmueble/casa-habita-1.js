@@ -1,6 +1,6 @@
 ({
-	latitud: '',
-	longitud: '',
+	latitud: '25.478316',
+	longitud: '-100.969512',
 	$imagen_principal_type: 'image',
 	imagen_principal: '/remote/direct_uploads/1543283374_casa_habita.jpg',
 	$imagen_chica_type: 'image',

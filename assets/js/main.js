@@ -87,8 +87,16 @@ function servicio(servicio) {
 }
 
 function loquehacemosMapa() {
+  var latitud = $("#inmueble-descripcion").data("lat");
+  var longitud = $("#inmueble-descripcion").data("lng");
+  if (latitud == "" || longitud == ""){
+    latitud = 25.464993;
+    longitud = -100.978545;
+  }
+
+
   mapa = new google.maps.Map(document.getElementById("mapa"), {
-    center: { lat: 25.464993, lng: -100.978545 },
+    center: { lat: latitud, lng: longitud },
     zoom: 15,
     // disableDefaultUI: true,
     styles: [
@@ -165,7 +173,7 @@ function loquehacemosMapa() {
     }
   };
   var party_location = {
-    position: new google.maps.LatLng(25.464993, -100.978545),
+    position: new google.maps.LatLng(latitud, longitud),
     type: "party"
   };
   console.log(party_location.position);
