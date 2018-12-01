@@ -5,18 +5,23 @@
     </h1>
   </div>
   <div class="row desarrollos">
+    {{#inmueble}}
+    {{#each this}}
+    <div class="mapa-desarrollo" data-lat="{{inmueble_entry.latitud}}" data-lng="{{inmueble_entry.longitud}}"></div>
+    {{/each}}
+    {{/inmueble}}
     <!-- <div class="col-4">
       <ul class="list-unstyled lista"> -->
-        <!-- 1 -->
-        <!-- <li class="media">
+    <!-- 1 -->
+    <!-- <li class="media">
           <img class="mr-3" src="/assets/img/habita_residencial.jpg" alt="">
           <div class="media-body">
             <h4 class="colonia">Casa en Habita Residencial</h4>
             <h5 class="direccion">Los Rodríguez 25200 Saltillo, Coah.</h5>
           </div>
         </li> -->
-        <!-- 2 -->
-        <!-- <li class="media">
+    <!-- 2 -->
+    <!-- <li class="media">
           <img class="mr-3" src="/assets/img/lotes_villanatura.jpg" alt="">
           <div class="media-body">
             <h4 class="colonia">Lotes en Villanatura</h4>
@@ -24,8 +29,8 @@
               C.P. 00000</h5>
           </div>
         </li> -->
-        <!-- 3 -->
-        <!-- <li class="media">
+    <!-- 3 -->
+    <!-- <li class="media">
           <img class="mr-3" src="/assets/img/rincon_alcantara100x100.jpg" alt="">
           <div class="media-body">
             <h4 class="colonia">Rincón de Alcántara</h4>
@@ -33,8 +38,8 @@
               C.P. 00000</h5>
           </div>
         </li> -->
-        <!-- 4 -->
-        <!-- <li class="media">
+    <!-- 4 -->
+    <!-- <li class="media">
           <img class="mr-3" src="/assets/img/lorem_ipsum.jpg" alt="">
           <div class="media-body">
             <h4 class="colonia">Lorem Ipsum</h4>

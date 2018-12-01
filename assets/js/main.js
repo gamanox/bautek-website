@@ -6,6 +6,8 @@ var agendaCita = document.getElementById("agendarcita");
 var formContacto = document.getElementById("form-contacto");
 var galeriaDetalle = document.getElementById("galeria-detalle");
 var breadcrumb = document.getElementById("breadcrumb");
+var mapaDesarrollos = document.getElementById("mapa-desarrollos");
+var mapaDesarrollosId;
 
 var markersArray = [];
 var infowindow;
@@ -90,12 +92,11 @@ function servicio(servicio) {
 function loquehacemosMapa() {
   var latitud = $(".ubicacion").data("lat");
   var longitud = $(".ubicacion").data("lng");
-  if (latitud == "" || longitud == ""){
+  if (latitud == "" || longitud == "") {
     latitud = 25.464993;
     longitud = -100.978545;
   } else {
   }
-
 
   mapa = new google.maps.Map(document.getElementById("mapa"), {
     center: { lat: latitud, lng: longitud },
@@ -278,6 +279,118 @@ function initMap() {
   map.setZoom(14);
   map.panTo(currentMarker.position);
 }
+function initMapaDesarrollos() {
+  console.log("mapa-desarrollos");
+  var bounds = new google.maps.LatLngBounds();
+  var desarrollos = [];
+  $(".mapa-desarrollo").each(function(index, element) {
+    element == this;
+    var iLat = $(this).data("lat");
+    var iLng = $(this).data("lng");
+    desarrollos.push({ position: new google.maps.LatLng(iLat, iLng) });
+  });
+  console.log(desarrollos);
+  mapaDesarrollosId = new google.maps.Map(
+    document.getElementById("mapa-desarrollos"),
+    {
+      center: { lat: 25.464993, lng: -100.978545 },
+      zoom: 15,
+      disableDefaultUI: true,
+      styles: [
+        {
+          featureType: "water",
+          elementType: "geometry",
+          stylers: [{ color: "#e9e9e9" }, { lightness: 17 }]
+        },
+        {
+          featureType: "landscape",
+          elementType: "geometry",
+          stylers: [{ color: "#f5f5f5" }, { lightness: 20 }]
+        },
+        {
+          featureType: "road.highway",
+          elementType: "geometry.fill",
+          stylers: [{ color: "#ffffff" }, { lightness: 17 }]
+        },
+        {
+          featureType: "road.highway",
+          elementType: "geometry.stroke",
+          stylers: [{ color: "#ffffff" }, { lightness: 29 }, { weight: 0.2 }]
+        },
+        {
+          featureType: "road.arterial",
+          elementType: "geometry",
+          stylers: [{ color: "#ffffff" }, { lightness: 18 }]
+        },
+        {
+          featureType: "road.local",
+          elementType: "geometry",
+          stylers: [{ color: "#ffffff" }, { lightness: 16 }]
+        },
+        {
+          featureType: "poi",
+          elementType: "geometry",
+          stylers: [{ color: "#f5f5f5" }, { lightness: 21 }]
+        },
+        {
+          featureType: "poi.park",
+          elementType: "geometry",
+          stylers: [{ color: "#dedede" }, { lightness: 21 }]
+        },
+        {
+          elementType: "labels.text.stroke",
+          stylers: [
+            { visibility: "on" },
+            { color: "#ffffff" },
+            { lightness: 16 }
+          ]
+        },
+        {
+          elementType: "labels.text.fill",
+          stylers: [{ saturation: 36 }, { color: "#333333" }, { lightness: 40 }]
+        },
+        { elementType: "labels.icon", stylers: [{ visibility: "off" }] },
+        {
+          featureType: "transit",
+          elementType: "geometry",
+          stylers: [{ color: "#f2f2f2" }, { lightness: 19 }]
+        },
+        {
+          featureType: "administrative",
+          elementType: "geometry.fill",
+          stylers: [{ color: "#fefefe" }, { lightness: 20 }]
+        },
+        {
+          featureType: "administrative",
+          elementType: "geometry.stroke",
+          stylers: [{ color: "#fefefe" }, { lightness: 17 }, { weight: 1.2 }]
+        }
+      ]
+    }
+  );
+  var icons = {
+    party: {
+      icon: "/assets/img/quehay-marcador-bautek.svg"
+    }
+  };
+
+  var party_location = {
+    position: new google.maps.LatLng(25.464993, -100.978545),
+    type: "party"
+  };
+  desarrollos.forEach(element => {
+    var currentMarker = new google.maps.Marker({
+      icon: "/assets/img/quehay-marcador-bautek.svg",
+      position: element.position,
+      map: mapaDesarrollosId
+    });
+    bounds.extend(currentMarker.position);
+  });
+
+  mapaDesarrollosId.setZoom(14);
+  mapaDesarrollosId.panTo(bounds.getCenter());
+  mapaDesarrollosId.fitBounds(bounds);
+}
 
 $(function() {
   $("#quehay-mapa .servicio").on("click", function() {
@@ -413,22 +526,24 @@ $(function() {
     });
   }
   if (breadcrumb) {
-   var address = window.location.pathname; 
-   address = address.replace("-", " ");
-   var nivel;
-   if ($(breadcrumb).hasClass("bread-detalle")) {
-    nivel = address.split("/", 3);
-    nivel = nivel[2];
-    $('.bread-detalle p').append(nivel)
-   } else {
-    
-   }
-   console.log(nivel);
-   console.log(address);
+    var address = window.location.pathname;
+    address = address.replace("-", " ");
+    var nivel;
+    if ($(breadcrumb).hasClass("bread-detalle")) {
+      nivel = address.split("/", 3);
+      nivel = nivel[2];
+      $(".bread-detalle p").append(nivel);
+    } else {
+    }
+    console.log(nivel);
+    console.log(address);
   }
   // if (galeriaDetalle) {
   //   $("#galeria-detalle .carousel-item")
   //     .first()
   //     .addClass("active");
   // }
+  if (mapaDesarrollos) {
+    initMapaDesarrollos();
+  }
 });
