@@ -308,7 +308,9 @@ $(function() {
     new fullpage("#inicio-intro", {
       licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
       autoScrolling: false,
-      fitToSection: false
+      fitToSection: false,
+      slidesNavigation: true,
+      slidesNavPosition: "bottom"
     });
     setInterval(() => {
       fullpage_api.moveSlideRight();
