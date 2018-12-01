@@ -11,17 +11,18 @@
         <div class="row">
           {{#each this}}
           {{#if inmueble_entry.imagen_chica}}
-            <div class="col-4">
-              <div class="imagenes">
-                <img class="imagen" src="{{inmueble_entry.imagen_chica}}" alt="" />
-                <a href="/inmueble/{{page_slug}}" class="rollover-gal">
-                  <img src="/assets/img/mas.svg" alt="">
-                </a>
+          <div class="col-4">
+            <div class="imagenes">
+              <div class="imagen" style="background-image: url({{inmueble_entry.imagen_chica}});">
               </div>
-              <p class="subtitulo">{{inmueble_entry.titulo1}} {{inmueble_entry.titulo2}}</p>
-              <p class="comentario">{{inmueble_entry.comentario1}}<br>{{inmueble_entry.comentario2}}</p>
+              <a href="/inmueble/{{page_slug}}" class="rollover-gal">
+                <img src="/assets/img/mas.svg" alt="">
+              </a>
             </div>
-            {{/if}}
+            <p class="subtitulo">{{inmueble_entry.titulo1}} {{inmueble_entry.titulo2}}</p>
+            <p class="comentario">{{inmueble_entry.comentario1}}<br>{{inmueble_entry.comentario2}}</p>
+          </div>
+          {{/if}}
           {{/each}}
         </div>
       </div>

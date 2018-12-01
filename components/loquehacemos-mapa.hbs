@@ -7,7 +7,9 @@
   <div class="row desarrollos">
     {{#inmueble}}
     {{#each this}}
-    <div class="mapa-desarrollo" data-lat="{{inmueble_entry.latitud}}" data-lng="{{inmueble_entry.longitud}}"></div>
+    <div class="mapa-desarrollo" data-lat="{{inmueble_entry.latitud}}" data-lng="{{inmueble_entry.longitud}}"
+      data-title1="{{inmueble_entry.titulo1}}" data-title2="{{inmueble_entry.titulo2}}" data-img="{{inmueble_entry.imagen_chica}}"
+      data-comentario="{{inmueble_entry.comentario1}}" data-url="{{page_slug}}"></div>
     {{/each}}
     {{/inmueble}}
     <!-- <div class="col-4">
