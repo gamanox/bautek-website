@@ -1,6 +1,6 @@
 <div class="seccion" id="loquehacemos-intro">
-    <div class="contenedor section">
-      <!-- {{!-- SLIDE EN BAUTEK --}}
+  <div class="contenedor section">
+    <!-- {{!-- SLIDE EN BAUTEK --}}
       <div class="slide cont-principal" style="background-image: url(/assets/img/venta-slide.jpg)">
         <div>
           <h2 class="subtitulo">
@@ -20,17 +20,17 @@
         </div> --}}
       </div>
    -->
-      {{!-- SLIDE LOQUEHACEMOS --}}
-      <div class="slide cont-principal" style="background-image: url(/assets/img/slide-loquehacemos.jpg)">
-        <div>
-          <h1 class="titulo">LO QUE HACEMOS</h1>
-        </div>
-        <div>
-          <h3 class="comentario">Innovación y calidad en construcción</h3>
-        </div>
+    {{!-- SLIDE LOQUEHACEMOS --}}
+    <div class="slide cont-principal" style="background-image: url(/assets/img/slide-loquehacemos.jpg)">
+      <div>
+        <h1 class="titulo">LO QUE HACEMOS</h1>
       </div>
-  
-      <!-- {{!-- SLIDE CASA --}}
+      <div>
+        <h3 class="comentario">Innovación y calidad en construcción</h3>
+      </div>
+    </div>
+
+    <!-- {{!-- SLIDE CASA --}}
       <div class="slide cont-principal" style="background-image: url(/assets/img/slide-casa.jpg)">
         <div>
           <h2 class="subtitulo">ÚLTIMAS CASAS EN HABITA</h2>
@@ -47,8 +47,8 @@
           </p>
         </div>
       </div> -->
-  
-      <!-- {{!-- SLIDE FRACCIONAMIENTO --}}
+
+    <!-- {{!-- SLIDE FRACCIONAMIENTO --}}
       <div class="slide cont-principal" style="background-image: url(/assets/img/slide-fraccionamiento.jpg)">
         <div>
           <h2 class="subtitulo">RINCÓN DE ALCÁNTARA.</h2>
@@ -65,19 +65,21 @@
           </p>
         </div>
       </div> -->
-  
-    </div>
-    <div class="breadcrumb">
-      <p>
-        INICIO <img src="/assets/img/breadcrumb-arrow.svg" alt=""> CASAS A TU MEDIDA
-      </p>
-    </div>
+
   </div>
-  <script>
-    new fullpage("#loquehacemos-intro", {
-      licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
-      autoScrolling: false,
-      fitToSection: false,
-    });
-  
-  </script>
+  <div class="breadcrumb">
+    <p>
+      INICIO <img src="/assets/img/breadcrumb-arrow.svg" alt=""> CASAS A TU MEDIDA
+    </p>
+  </div>
+  {{#>agendacita}}
+  {{/agendacita}}
+</div>
+<script>
+  new fullpage("#loquehacemos-intro", {
+    licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
+    autoScrolling: false,
+    fitToSection: false,
+  });
+
+</script>

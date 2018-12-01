@@ -1,21 +1,21 @@
 <div class="seccion" id="atumedida-intro">
-    <div class="contenedor section">
-      {{!-- SLIDE ATUMEDIDA --}}
-      <div class="slide cont-principal" style="background-image: url(/assets/img/slide-atumedida.jpg)">
-        <div>
-          <h2 class="subtitulo">
-            <img src="/assets/img/slider-vector-atumedida.svg" alt="">
-          </h2>
-        </div>
-        <div>
-          <h1 class="titulo">CASAS A TU MEDIDA</h1>
-        </div>
-        <div>
-          <h3 class="comentario">Diseñamos tu casa de acuerdo a tu gusto y estilo</h3>
-        </div>
+  <div class="contenedor section">
+    {{!-- SLIDE ATUMEDIDA --}}
+    <div class="slide cont-principal" style="background-image: url(/assets/img/slide-atumedida.jpg)">
+      <div>
+        <h2 class="subtitulo">
+          <img src="/assets/img/slider-vector-atumedida.svg" alt="">
+        </h2>
       </div>
-  
-      <!-- {{!-- SLIDE LOQUEHACEMOS --}}
+      <div>
+        <h1 class="titulo">CASAS A TU MEDIDA</h1>
+      </div>
+      <div>
+        <h3 class="comentario">Diseñamos tu casa de acuerdo a tu gusto y estilo</h3>
+      </div>
+    </div>
+
+    <!-- {{!-- SLIDE LOQUEHACEMOS --}}
       <div class="slide cont-principal" style="background-image: url(/assets/img/slide-loquehacemos.jpg)">
         <div>
           <h2 class="subtitulo"></h2>
@@ -32,8 +32,8 @@
           </p>
         </div>
       </div> -->
-  
-      <!-- {{!-- SLIDE CASA --}}
+
+    <!-- {{!-- SLIDE CASA --}}
       <div class="slide cont-principal" style="background-image: url(/assets/img/slide-casa.jpg)">
         <div>
           <h2 class="subtitulo">ÚLTIMAS CASAS EN HABITA</h2>
@@ -50,8 +50,8 @@
           </p>
         </div>
       </div> -->
-  
-      <!-- {{!-- SLIDE FRACCIONAMIENTO --}}
+
+    <!-- {{!-- SLIDE FRACCIONAMIENTO --}}
       <div class="slide cont-principal" style="background-image: url(/assets/img/slide-fraccionamiento.jpg)">
         <div>
           <h2 class="subtitulo">RINCÓN DE ALCÁNTARA.</h2>
@@ -68,19 +68,21 @@
           </p>
         </div>
       </div> -->
-  
-    </div>
-    <div class="breadcrumb">
-      <p>
-        INICIO <img src="/assets/img/breadcrumb-arrow.svg" alt=""> CASAS A TU MEDIDA
-      </p>
-    </div>
+
   </div>
-  <script>
-    new fullpage("#atumedida-intro", {
-      licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
-      autoScrolling: false,
-      fitToSection: false,
-    });
-  
-  </script>
+  <div class="breadcrumb">
+    <p>
+      INICIO <img src="/assets/img/breadcrumb-arrow.svg" alt=""> CASAS A TU MEDIDA
+    </p>
+  </div>
+  {{#>agendacita}}
+  {{/agendacita}}
+</div>
+<script>
+  new fullpage("#atumedida-intro", {
+    licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
+    autoScrolling: false,
+    fitToSection: false,
+  });
+
+</script>
