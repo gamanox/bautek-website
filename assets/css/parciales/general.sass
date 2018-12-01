@@ -39,8 +39,43 @@ body
     display: block
     z-index: 6
     background-color: rgba(0,0,0,0.5)
-
-  // mix-blend-mode: multiply
+  .carousel-control-next-icon
+    display: inline-block
+    width: 20px
+    height: 20px
+    background: transparent, no-repeat, center, center
+    background-image: url("/assets/img/arrow-l.svg")
+    transform: scaleX(-1)
+    filter: invert(50%) sepia(68%) saturate(3900%) hue-rotate(337deg) brightness(94%) contrast(92%)
+  .carousel-control-prev-icon
+    display: inline-block
+    width: 20px
+    height: 20px
+    background: transparent, no-repeat, center, center
+    background-image: url("/assets/img/arrow-l.svg")
+    filter: invert(50%) sepia(68%) saturate(3900%) hue-rotate(337deg) brightness(94%) contrast(92%)
+  .carousel-indicators
+    position: absolute
+    top: 100%
+    bottom: auto !important
+    display: inline-flex
+    float: right
+    width: auto
+    margin-right: 0
+    list-style-position: inside
+    margin-left: 72%
+    justify-content: right
+    text-align: right
+  .carousel-indicators li
+    height: 7px
+    width: 7px
+    margin-left: 9px
+    margin-right: 9px
+    background-color: #FFCBA8
+    &.active
+      background-color: #E8603B
+      transform: rotate(45deg)
+  
 
 .center_block
   text-align: center
@@ -122,7 +157,7 @@ li
     transform: scale(1.2)
 
 .section
-  .slide:before
+  .slide.active:before
     position: absolute
     content: " "
     top: 0
@@ -131,7 +166,7 @@ li
     height: 100%
     display: block
     z-index: 1
-    background-color: rgba(0,0,0,0.1)
+    background-color: rgba(0,0,0,0.3)
     mix-blend-mode: multiply
   .slide
     .fp-tableCell
