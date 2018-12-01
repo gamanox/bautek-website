@@ -5,6 +5,7 @@ var introSliderVenta = document.getElementById("venta-intro");
 var agendaCita = document.getElementById("agendarcita");
 var formContacto = document.getElementById("form-contacto");
 var galeriaDetalle = document.getElementById("galeria-detalle");
+var breadcrumb = document.getElementById("breadcrumb");
 
 var markersArray = [];
 var infowindow;
@@ -92,6 +93,7 @@ function loquehacemosMapa() {
   if (latitud == "" || longitud == ""){
     latitud = 25.464993;
     longitud = -100.978545;
+  } else {
   }
 
 
@@ -409,6 +411,20 @@ $(function() {
         }
       );
     });
+  }
+  if (breadcrumb) {
+   var address = window.location.pathname; 
+   address = address.replace("-", " ");
+   var nivel;
+   if ($(breadcrumb).hasClass("bread-detalle")) {
+    nivel = address.split("/", 3);
+    nivel = nivel[2];
+    $('.bread-detalle p').append(nivel)
+   } else {
+    
+   }
+   console.log(nivel);
+   console.log(address);
   }
   // if (galeriaDetalle) {
   //   $("#galeria-detalle .carousel-item")

@@ -47,7 +47,7 @@
 				descripcion_renglon_2: 'Vive los mejores momentos de tu vida en tu nueva casa',
 				activar_boton: true,
 				boton_texto: 'CONOCER MÁS',
-				boton_link: '/fraccionamiento'
+				boton_link: '/rincon-de-alcantara'
 			}
 		]
 	}
