@@ -87,8 +87,8 @@ function servicio(servicio) {
 }
 
 function loquehacemosMapa() {
-  var latitud = $("#inmueble-descripcion").data("lat");
-  var longitud = $("#inmueble-descripcion").data("lng");
+  var latitud = $(".ubicacion").data("lat");
+  var longitud = $(".ubicacion").data("lng");
   if (latitud == "" || longitud == ""){
     latitud = 25.464993;
     longitud = -100.978545;
