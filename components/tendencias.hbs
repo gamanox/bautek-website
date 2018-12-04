@@ -11,7 +11,7 @@
         <div class="row">
           {{#each this}}
           {{#if inmueble_entry.imagen_chica}}
-          <div class="col-4">
+          <div class="col-3">
             <div class="imagenes">
               <div class="imagen" style="background-image: url({{inmueble_entry.imagen_chica}});">
               </div>
@@ -20,7 +20,7 @@
               </a>
             </div>
             <p class="subtitulo">{{inmueble_entry.titulo1}} {{inmueble_entry.titulo2}}</p>
-            <p class="comentario">{{inmueble_entry.comentario1}}<br>{{inmueble_entry.comentario2}}</p>
+            {{!-- <p class="comentario">{{inmueble_entry.comentario1}}<br>{{inmueble_entry.comentario2}}</p> --}}
           </div>
           {{/if}}
           {{/each}}

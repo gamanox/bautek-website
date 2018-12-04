@@ -6,11 +6,11 @@
 	$imagen_chica_type: 'image',
 	imagen_chica: '/remote/direct_uploads/1543607968_modelo-2-chica.jpg',
 	titulo1: 'MODELO 2',
-	titulo2: '',
+	titulo2: 'FORNEOS',
 	comentario1: '220 m2 de construcción. 3 recámaras 3 1/2 baños.',
 	comentario2: 'PREVENTA: Casas desde  $3’500,000',
 	subtitulo: 'Aprovecha la preventa!',
-	descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+	descripcion: 'Estilo contemporáneo y minimalista con acabados en tonos neutros y con detalles de naturaleza que realzan la simplicidad y belleza de su diseño.',
 	detalles: [
 		{
 			nombre: 'ubicacion',

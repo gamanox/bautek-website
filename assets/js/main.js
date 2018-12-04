@@ -7,6 +7,7 @@ var formContacto = document.getElementById("form-contacto");
 var galeriaDetalle = document.getElementById("galeria-detalle");
 var breadcrumb = document.getElementById("breadcrumb");
 var mapaDesarrollos = document.getElementById("mapa-desarrollos");
+var detalleInmueble = document.getElementById("inmueble-data");
 var mapaDesarrollosId;
 
 var estilosMapa = [
@@ -159,6 +160,10 @@ function servicio(servicio) {
 function loquehacemosMapa() {
   var latitud = $(".ubicacion").data("lat");
   var longitud = $(".ubicacion").data("lng");
+  var iTitle1 = $(".ubicacion").data("title1");
+  var iTitle2 = $(".ubicacion").data("title2");
+  var iImg = $(".ubicacion").data("img");
+  var iComentario = $(".ubicacion").data("comentario");
   if (latitud == "" || longitud == "") {
     latitud = 25.464993;
     longitud = -100.978545;
@@ -182,11 +187,44 @@ function loquehacemosMapa() {
     type: "party"
   };
   console.log(party_location.position);
+  var link =
+    "https://www.google.com/maps/search/?api=1&query=" +
+    party_location.position.lat() +
+    "," +
+    party_location.position.lng();
+  console.log(link);
+  var src = iImg;
+  var contentString = "";
+  contentString += '<div class="media">';
+  contentString +=
+    '  <div class="mr-3" style="background-image: url(' +
+    src +
+    '); background-repeat: no-repeat; background-size: cover; width: 88px; height: 88px;" ></div>';
+  contentString += '  <div class="media-body">';
+  contentString +=
+    '    <h5 class="mt-0">' + iTitle1 + "<br>" + iTitle2 + "</h5>";
+  contentString += "<p>" + iComentario + "</p>";
+  contentString +=
+    '<p><a href="' + link + '" target="_blank">ver en google maps</a></p>';
+  contentString += "  </div>";
+  contentString += "</div>";
   var currentMarker = new google.maps.Marker({
     icon: "/assets/img/quehay-marcador-bautek.svg",
     position: party_location.position,
     map: mapa
   });
+  if (detalleInmueble) {
+    var infowindow = new SnazzyInfoWindow({
+      map: mapa,
+      marker: currentMarker,
+      maxWidth: 380,
+      closeOnMapClick: true,
+      closeWhenOthersOpen: true,
+      content: contentString,
+      backgroundColor: "#EA5F32"
+    });
+  }
+
   mapa.setZoom(14);
   mapa.panTo(currentMarker.position);
 }
