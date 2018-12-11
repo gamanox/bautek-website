@@ -6,3 +6,4 @@
 enduro_secret.json
 /juicebox
 package-lock.json
+.vscode/sftp.json
