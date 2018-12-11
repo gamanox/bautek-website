@@ -5,7 +5,7 @@
 	imagen_principal: '/remote/direct_uploads/1543288653_modelo-1-full.jpg',
 	$imagen_chica_type: 'image',
 	imagen_chica: '/remote/direct_uploads/1543698677_imagen-detalle-3.jpg',
-	titulo1: 'MODELO 1',
+	titulo1: 'MODELO 1:',
 	titulo2: 'CANTERAS',
 	comentario1: '220 m2 de construcción. 3 recámaras 3 1/2 baños.',
 	comentario2: 'PREVENTA: Casas desde  $3’500,000',

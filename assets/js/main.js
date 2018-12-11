@@ -389,7 +389,7 @@ $(function() {
       slidesNavPosition: "bottom"
     });
     setInterval(() => {
-      fullpage_api.moveSlideRight();
+      // fullpage_api.moveSlideRight();
     }, 5000);
   }
   if (introSliderVenta) {

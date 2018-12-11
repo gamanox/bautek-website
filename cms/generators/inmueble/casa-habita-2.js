@@ -114,7 +114,7 @@
 	imagenes: [
 		{
 			$imagen_type: 'image',
-			imagen: '/remote/direct_uploads/1543287259_bautek_gris_grande.jpg'
+			imagen: '/remote/direct_uploads/1544027931_preventa-2pisos.jpg'
 		}
 	],
 	mostrar_planos: false,

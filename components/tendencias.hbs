@@ -9,9 +9,10 @@
     <div class="col-12">
       <div class="album">
         <div class="row">
+          {{#grouped_each 4 this}}
           {{#each this}}
           {{#if inmueble_entry.imagen_chica}}
-          <div class="col-3">
+          <div class="col-xs-12 col-md-3">
             <div class="imagenes">
               <div class="imagen" style="background-image: url({{inmueble_entry.imagen_chica}});">
               </div>
@@ -24,6 +25,7 @@
           </div>
           {{/if}}
           {{/each}}
+          {{/grouped_each}}
         </div>
       </div>
     </div>

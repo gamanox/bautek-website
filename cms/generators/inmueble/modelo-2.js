@@ -5,7 +5,7 @@
 	imagen_principal: '/remote/direct_uploads/1543289649_modelo-2-full.jpg',
 	$imagen_chica_type: 'image',
 	imagen_chica: '/remote/direct_uploads/1543607968_modelo-2-chica.jpg',
-	titulo1: 'MODELO 2',
+	titulo1: 'MODELO 2:',
 	titulo2: 'FORNEOS',
 	comentario1: '220 m2 de construcción. 3 recámaras 3 1/2 baños.',
 	comentario2: 'PREVENTA: Casas desde  $3’500,000',
