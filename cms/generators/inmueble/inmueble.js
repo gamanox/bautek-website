@@ -79,7 +79,9 @@
   imagenes: [
     {
       $imagen_type: "image",
-      imagen: ""
+      imagen: "",
+      $imagen_grande_type: "image",
+      imagen_grande: ""
     }
   ],
   mostrar_planos: false,
