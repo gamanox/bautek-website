@@ -498,11 +498,11 @@ $(function() {
     console.log(nivel);
     console.log(address);
   }
-  // if (galeriaDetalle) {
-  //   $("#galeria-detalle .carousel-item")
-  //     .first()
-  //     .addClass("active");
-  // }
+  if (galeriaDetalle) {
+    $("#galeria-detalle .carousel-item")
+      .first()
+      .addClass("active");
+  }
   if (mapaDesarrollos) {
     initMapaDesarrollos();
   }
