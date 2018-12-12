@@ -8,6 +8,7 @@ var galeriaDetalle = document.getElementById("galeria-detalle");
 var breadcrumb = document.getElementById("breadcrumb");
 var mapaDesarrollos = document.getElementById("mapa-desarrollos");
 var detalleInmueble = document.getElementById("inmueble-data");
+var galeria = document.getElementById("galeria");
 var mapaDesarrollosId;
 
 var estilosMapa = [
@@ -79,6 +80,8 @@ var estilosMapa = [
 
 var markersArray = [];
 var infowindow;
+
+function galeriaFancy() {}
 
 function createMarker(place) {
   var mkColor = $("#quehay-mapa .servicio.active").data("servicio");
@@ -519,5 +522,16 @@ $(function() {
   }
   if (mapaDesarrollos) {
     initMapaDesarrollos();
+  }
+  if (galeria) {
+    $(".album-img").each(function(index, element) {
+      var indx = parseInt($(this).attr("index"));
+      indx = indx;
+      indx = indx * 10;
+      console.log(indx);
+      $(this).attr({
+        "data-fancybox-index": indx
+      });
+    });
   }
 });

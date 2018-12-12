@@ -17,7 +17,8 @@
           </div> --}}
           <div class="col-md-4">
             <div class="imagenes">
-              <a data-fancybox-trigger="gallery-{{albumId}}" href="javascript:;" class="">
+              <a data-fancybox-trigger="gallery-principal" href="javascript:;" class="album-img" data-fancybox-index=""
+                index="{{albumId}}">
                 <img class="imagen" src="{{this.imagenes.0.imagen}}" alt="" />
               </a>
               <div class="rollover-gal">
@@ -30,8 +31,8 @@
           {{#each imagenes}}
           <div class="col-4 hidden">
             <div class="imagenes">
-              <a href="{{imagen}}" data-fancybox="gallery-{{albumId}}" class="">
-                <img class="imagen" src="{{imagen}}" alt="" />
+              <a href="{{imagen}}" data-fancybox="gallery-principal" class="{{albumId}}">
+                <img class="imagen imagen-galeria" src="{{imagen}}" alt="" />
               </a>
               <div class="rollover-gal">
                 <img src="/assets/img/mas.svg" alt="">
