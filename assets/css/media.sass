@@ -11,10 +11,10 @@
   #principal
     h1
       font-size: 3rem !important
-      width: 100%
-      margin-left: auto
-      margin-right: auto
-      text-align: center
+      width: 100% !important
+      margin-left: auto !important
+      margin-right: auto !important
+      text-align: center !important
 
   #principal .fp-controlArrow
     display: none
@@ -102,9 +102,9 @@
     #mapa
       margin-left: 55px
       height: 511px
-  #inicio #inicio-servicios .imagen-secc, #atumedida-servicios .imagen-secc, #venta #venta-servicios .imagen-secc, #asesoria-servicios .servicio .imagen-secc, #somos #somos-detalle .servicio .imagen-secc
+  #inicio #inicio-servicios .imagen-secc, #atumedida-servicios .imagen-secc, #venta #venta-servicios .imagen-secc, #asesoria-servicios .servicio .imagen-secc, #somos #somos-detalle .servicio .imagen-secc, #atumedida #servicios-principales .imagen-secc
     height: 300px
-  #atumedida-servicios .servicio, #venta #venta-servicios .principal.servicio, #asesoria-servicios .servicio, #somos #somos-detalle .servicio
+  #atumedida-servicios .servicio, #venta #venta-servicios .principal.servicio, #asesoria-servicios .servicio, #somos #somos-detalle .servicio, #atumedida #servicios-principales .servicio, #atumedida #servicios-principales .servicio.gris
     width: 100%
     padding: 0
     height: auto
@@ -119,16 +119,18 @@
 
 
   #inicio .contenedor .cont-principal .subtitulo
-  #anuncio, #venta #venta-servicios .servicio.gris, #venta #venta-servicios .servicio.naranja, #asesoria-servicios .servicio
+  #anuncio, #venta #venta-servicios .servicio.gris, #venta #venta-servicios .servicio.naranja, #asesoria-servicios .servicio, #atumedida #servicios-principales .servicio.gris
     height: auto !important
 
 
-  #anuncio .imagen-secc, #venta #venta-servicios .servicio.gris .imagen-secc, #venta #venta-servicios .servicio.naranja .imagen-secc,
+  #anuncio .imagen-secc, #venta #venta-servicios .servicio.gris .imagen-secc, #venta #venta-servicios .servicio.naranja .imagen-secc
     height: 250px !important
     width: auto
     margin-top: 20px
     margin-left: 20px
     margin-right: 20px
+  #atumedida #servicios-principales .servicio.gris .imagen-secc
+    margin-top: 0
   #anuncio .texto-secc .texto-contenedor .comentario
     text-align: center
   #inicio .titulo
