@@ -254,6 +254,27 @@ function initMap() {
     position: party_location.position,
     map: map
   });
+  var contentString = "";
+  contentString += '<div class="media">';
+  contentString +=
+    '  <div class="mr-3" style="background-image: url(/assets/img/bautek-location.jpg); background-repeat: no-repeat; background-size: cover; width: 88px; height: 88px;" ></div>';
+  contentString += '  <div class="media-body">';
+  contentString += '    <h5 class="mt-0">Bautek</h5>';
+  contentString +=
+    "<p>Juan Pablo Rodríguez # 120 - 4 Colonia Doctores. 25250 Saltillo, Coahuila. México</p>";
+  contentString +=
+    '<p><a href="https://goo.gl/maps/fcHnjuw8KQy" target="_blank">ver en google maps</a></p>';
+  contentString += "  </div>";
+  contentString += "</div>";
+  var infowindow = new SnazzyInfoWindow({
+    map: map,
+    marker: currentMarker,
+    maxWidth: 380,
+    closeOnMapClick: true,
+    closeWhenOthersOpen: true,
+    content: contentString,
+    backgroundColor: "#EA5F32"
+  });
   map.setZoom(14);
   map.panTo(currentMarker.position);
 }
@@ -321,7 +342,7 @@ function initMapaDesarrollos() {
       element.titulo1 +
       "<br>" +
       element.titulo2 +
-      "</h5></a>";
+      "</a></h5>";
     contentString += "<p>" + element.comentario + "</p>";
     contentString +=
       '<p><a href="' + link + '" target="_blank">ver en google maps</a></p>';

@@ -13,6 +13,11 @@
       <div class="col-12">
         <div class="procesos">
           <div class="row">
+            <div class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#galeria-detalle" data-slide-to="{{@index}}" class="{{#if @first}}active{{/if}}"></li>
+              </ol>
+            </div>
             <div class="col-xs-12 col-md-4">
               <div class="proceso">
                 <img src="/assets/img/atumedida-entrevista.svg" alt="">
