@@ -256,8 +256,7 @@ function initMap() {
   });
   var contentString = "";
   contentString += '<div class="media">';
-  contentString +=
-    '  <div class="mr-3" style="background-image: url(/assets/img/bautek-location.jpg); background-repeat: no-repeat; background-size: cover; width: 88px; height: 88px;" ></div>';
+  contentString += "";
   contentString += '  <div class="media-body">';
   contentString += '    <h5 class="mt-0">Bautek</h5>';
   contentString +=
