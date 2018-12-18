@@ -235,7 +235,7 @@ function loquehacemosMapa() {
 var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 25.464993, lng: -100.978545 },
+    center: { lat: 25.4638236, lng: -100.9789663 },
     zoom: 15,
     disableDefaultUI: true,
     styles: estilosMapa
@@ -246,7 +246,7 @@ function initMap() {
     }
   };
   var party_location = {
-    position: new google.maps.LatLng(25.464993, -100.978545),
+    position: new google.maps.LatLng(25.4638236, -100.9789663),
     type: "party"
   };
   var currentMarker = new google.maps.Marker({
