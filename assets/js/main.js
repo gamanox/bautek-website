@@ -502,11 +502,11 @@ $(function() {
       var title2 = $("#inmueble-data").data("title2");
       $(".bread-detalle p").append(nivel);
       $("meta[property=og\\:url]").attr("content", direccion);
-      // $("meta[property=og\\:description]").attr("content", desc);
-      // $("meta[property=og\\:title]").attr(
-      //   "content",
-      //   "Bautek / " + title1 + " " + title2
-      // );
+      $("meta[property=og\\:description]").attr("content", desc);
+      $("meta[property=og\\:title]").attr(
+        "content",
+        "Bautek / " + title1 + " " + title2
+      );
       $(".inmueble-share").each(function(index, element) {
         var shareUrl = $(this).attr("href");
         $(this).attr("href", shareUrl + direccion);
