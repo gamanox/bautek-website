@@ -1,8 +1,8 @@
 {{#with global.showcase}}
 
-<div class="seccion" id="inicio-intro">
+<div class="seccion anim" id="inicio-intro">
   <div class="contenedor section">
-  {{#each slides}}
+    {{#each slides}}
     <div class="slide cont-principal" style="background-image: url({{slide_imagen}})">
       <div>
         <h2 class="subtitulo">{{titulo}}</h2>
@@ -15,13 +15,13 @@
       </div>
       {{#if activar_boton}}
       <div class="link">
-          <p>
-            <a href="{{boton_link}}" class="boton">{{boton_texto}}</a>
-          </p>
-        </div>
+        <p>
+          <a href="{{boton_link}}" class="boton">{{boton_texto}}</a>
+        </p>
+      </div>
       {{/if}}
     </div>
-  {{/each}}
+    {{/each}}
     <!-- {{!-- SLIDE EN BAUTEK --}}
     <div class="slide cont-principal" style="background-image: url(/assets/img/slide-intro.jpg)">
       <div>
