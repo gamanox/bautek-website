@@ -31,6 +31,8 @@ $(function() {
         // .setTween(servTL)
         .addTo(controller);
     });
+  } else {
+    $(".anim").addClass("moveup");
   }
 
   // ready end
