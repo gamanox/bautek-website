@@ -86,10 +86,7 @@
 			caracteristica: 'Estancia familiar'
 		},
 		{
-			caracteristica: 'Terraza con jardín'
-		},
-		{
-			caracteristica: 'Recámara principal en planta baja'
+			caracteristica: 'Amplio jardín'
 		},
 		{
 			caracteristica: 'Walk-in closet equipado en recámara principal'
