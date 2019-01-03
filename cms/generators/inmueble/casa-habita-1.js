@@ -164,7 +164,8 @@
 	planos: [
 		{
 			$plano_type: 'image',
-			plano: '/remote/direct_uploads/1544639418_Bautek-habita1piso.png'
+			plano: '/remote/direct_uploads/1544639418_Bautek-habita1piso.png',
+			planta: ''
 		}
 	]
 })

@@ -89,7 +89,8 @@
   planos: [
     {
       $plano_type: "image",
-      plano: ""
+      plano: "",
+      planta: ""
     }
   ]
 });

@@ -140,11 +140,13 @@
 	planos: [
 		{
 			$plano_type: 'image',
-			plano: '/remote/direct_uploads/1544639455_Bautek-habita2pisosA.jpg'
+			plano: '/remote/direct_uploads/1544639455_Bautek-habita2pisosA.jpg',
+			planta: 'planta baja'
 		},
 		{
 			$plano_type: 'image',
-			plano: '/remote/direct_uploads/1544639444_Bautek-habita2pisosB.png'
+			plano: '/remote/direct_uploads/1544639444_Bautek-habita2pisosB.png',
+			planta: 'planta alta'
 		}
 	]
 })

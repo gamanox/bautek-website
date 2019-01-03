@@ -126,6 +126,7 @@
               <div class="carousel-inner">
                 {{#each planos}}
                 <div class="carousel-item {{#if @first}}active{{/if}}">
+                  <p class="planta">{{planta}}</p>
                   <a href="{{plano}}" data-fancybox="galeria-planos-inmueble">
                     <img class="d-block w-100 plano" src="{{plano}}" alt="">
                   </a>

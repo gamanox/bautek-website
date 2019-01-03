@@ -20,7 +20,7 @@
 		},
 		{
 			nombre: 'direccion',
-			texto: 'Calle Granado 230 Fracc. Habita',
+			texto: 'Saltillo, Coahuila',
 			$icon_type: 'image',
 			icon: '/assets/img/detalle/ubicacion.svg'
 		},
@@ -32,7 +32,7 @@
 		},
 		{
 			nombre: 'terreno',
-			texto: '200 m2',
+			texto: '228 m2',
 			$icon_type: 'image',
 			icon: '/assets/img/detalle/terreno.svg'
 		},
@@ -83,10 +83,7 @@
 			caracteristica: 'Estancia familiar'
 		},
 		{
-			caracteristica: 'Terraza con jardín'
-		},
-		{
-			caracteristica: 'Recámara principal en planta baja'
+			caracteristica: 'Amplio jardín'
 		},
 		{
 			caracteristica: 'Walk-in closet equipado en recámara principal'
@@ -149,11 +146,13 @@
 	planos: [
 		{
 			$plano_type: 'image',
-			plano: '/remote/direct_uploads/1543289663_modelo-2-plano-1.jpg'
+			plano: '/remote/direct_uploads/1543289663_modelo-2-plano-1.jpg',
+			planta: 'planta baja'
 		},
 		{
 			$plano_type: 'image',
-			plano: '/remote/direct_uploads/1543343794_modelo-2-plano-2.jpg'
+			plano: '/remote/direct_uploads/1543343794_modelo-2-plano-2.jpg',
+			planta: 'planta alta'
 		}
 	]
 })

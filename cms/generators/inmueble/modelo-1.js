@@ -32,7 +32,7 @@
 		},
 		{
 			nombre: 'terreno',
-			texto: '200 m2',
+			texto: '228 m2',
 			$icon_type: 'image',
 			icon: '/assets/img/detalle/terreno.svg'
 		},
@@ -152,11 +152,13 @@
 	planos: [
 		{
 			$plano_type: 'image',
-			plano: '/remote/direct_uploads/1543288711_modelo-1-plano-1.jpg'
+			plano: '/remote/direct_uploads/1543288711_modelo-1-plano-1.jpg',
+			planta: 'planta baja'
 		},
 		{
 			$plano_type: 'image',
-			plano: '/remote/direct_uploads/1543343759_modelo-1-plano-2.jpg'
+			plano: '/remote/direct_uploads/1543343759_modelo-1-plano-2.jpg',
+			planta: 'planta alta'
 		}
 	]
 })
