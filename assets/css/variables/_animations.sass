@@ -1,0 +1,70 @@
+@keyframes zoomin
+  from
+    transform: scale(1)
+
+  to
+    transform: scale(1.5)
+
+@keyframes zoomout
+  from
+    transform: scale(1)
+
+  to
+    transform: scale(0.8)
+
+
+/* The element to apply the animation to
+
+.zoomin.active
+  overflow: hidden
+  animation-name: zoomin
+  animation-duration: 40s
+  animation-fill-mode: forwards
+  div
+    animation-name: zoomout
+    animation-duration: 40s
+    animation-fill-mode: forwards
+.zoomin-servicio:hover
+  div
+    overflow: hidden
+    animation-name: zoomin
+    animation-duration: 40s
+    animation-fill-mode: forwards
+.zoomin-servicio
+  div
+    transition: transform 1s ease-out
+
+
+.fade
+  opacity: 0
+  transition: opacity 1s ease-out
+  &.in
+    opacity: 1
+// .anim
+//   transition: transform 1s ease-out, opacity 0.6s ease-out
+//   transform: translate(0,300px)
+//   opacity: 0
+//   &.moveup
+//     transform: translate(0,0)
+//     opacity: 1
+
+.menu-anim
+
+  .menu-btn
+    visibility: hidden
+  .logo
+    top: 50%
+    left: 50%
+    transform: translate(-190px, -40px)
+
+.anim
+  .imagen-secc, .texto-secc
+    transition: transform 1s ease-out, opacity 0.6s ease-out
+    transform: translate(0,300px)
+    opacity: 0
+  &.moveup
+    .imagen-secc, .texto-secc
+      transform: translate(0,0)
+      opacity: 1
+    .texto-secc
+      transition-delay: 0.5s
