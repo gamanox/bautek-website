@@ -16,7 +16,15 @@ $(function() {
     var duration = 0.5;
     var tweenParallax = new TimelineMax().add([
       TweenMax.fromTo(
-        ".anim",
+        ".parallax",
+        1,
+        { backgroundPosition: "50% 100%" },
+        { backgroundPosition: "50% 0%", ease: Linear.easeNone }
+      )
+    ]);
+    var anuncioParallax = new TimelineMax().add([
+      TweenMax.fromTo(
+        ".parallax",
         1,
         { backgroundPosition: "50% 100%" },
         { backgroundPosition: "50% 0%", ease: Linear.easeNone }
@@ -41,6 +49,15 @@ $(function() {
       duration: $(window).width()
     })
       .setTween(tweenParallax)
+      // add indicators (requires plugin)
+      .addTo(controller);
+    var anuncioParallax = new ScrollMagic.Scene({
+      triggerElement: "#anuncio",
+      triggerHook: "onEnter",
+
+      duration: $(window).width()
+    })
+      .setTween(anuncioParallax)
       // add indicators (requires plugin)
       .addTo(controller);
 

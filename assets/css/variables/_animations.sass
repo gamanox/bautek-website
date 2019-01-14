@@ -58,12 +58,33 @@
     transform: translate(-190px, -40px)
 
 .anim
-  .imagen-secc, .texto-secc
+  .imagen-secc
     transition: transform 1s ease-out, opacity 0.6s ease-out
     transform: translate(0,300px)
     opacity: 0
+  .texto-secc
+    transition: transform 1s ease-out, opacity 0.6s ease-out
+    transform: translate(300px,0)
+    opacity: 0
+  .anim-text
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out
+    transform: translate(300px,0)
+    opacity: 0
+
+
+  &.imagenes
+    img
+      transition: transform 1s ease-out, opacity 0.6s ease-out
+      transform: translate(0,300px)
+      opacity: 0
+    &.moveup
+      img
+        transform: translate(0,0)
+        opacity: 1
+
+
   &.moveup
-    .imagen-secc, .texto-secc
+    .imagen-secc, .texto-secc, .anim-text
       transform: translate(0,0)
       opacity: 1
     .texto-secc

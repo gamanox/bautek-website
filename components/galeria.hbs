@@ -1,9 +1,9 @@
 {{#with global}}
 <div class="container-fluid" id="galeria">
   <div class="row">
-    <div class="col-12">
-      <h1 class="seccion-titulo">{{galeria_titulo}}</h1>
-      <p class="seccion-descripcion">{{galeria_descripcion}}</p>
+    <div class="col-12 anim">
+      <h1 class="seccion-titulo  anim-text">{{galeria_titulo}}</h1>
+      <p class="seccion-descripcion  anim-text">{{galeria_descripcion}}</p>
     </div>
   </div>
   <div class="row">
@@ -16,7 +16,7 @@
             <h3 class="titulo">{{titulo}}</h3>
           </div> --}}
           <div class="col-md-4">
-            <div class="imagenes">
+            <div class="imagenes anim">
               <a data-fancybox-trigger="gallery-principal" href="javascript:;" class="album-img" data-fancybox-index=""
                 index="{{albumId}}">
                 <img class="imagen" src="{{this.imagenes.0.imagen}}" alt="" />
@@ -30,7 +30,7 @@
 
           {{#each imagenes}}
           <div class="col-4 hidden">
-            <div class="imagenes">
+            <div class="imagenes anim">
               <a href="{{imagen}}" data-fancybox="gallery-principal" class="{{albumId}}">
                 <img class="imagen imagen-galeria" src="{{imagen}}" alt="" />
               </a>
